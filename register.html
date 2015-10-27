@@ -14,6 +14,8 @@
     <script type="text/javascript" src="js/default.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/default.css" rel="stylesheet" />
+    <link href="css/flat/red.css" rel="stylesheet">
+    <script src="js/icheck.js"></script>
     <!-- END OF BOOTSTRAP#01 -->
     <script>
         $(document).ready(function () {
@@ -51,6 +53,7 @@
             clear: right;
             height: 30px;
         }
+
     </style>
 </head>
 <body>
@@ -198,14 +201,18 @@
     </div>
     <!-- END OF NAVAIGATION#02 -->
 
-    <div id="content">
+    <div id="content" style="padding-top:157px;">
         <!-- INSERT YOUR CODE HERE#00-->
-        <form name="register_form" method="post" action="accessTest.jsp">
+        <form name="register_form" method="post" action="accessTest.jsp" onsubmit="return submit_check()">
             <fieldset>
                 <legend>用户注册</legend>
                 <div>
-                    <label for="Name">姓名</label>
-                    <input type="text" name="userName" id="Name" size="18" maxlength="15" style="float:left" /><br />
+                    <label for="Name">用户名</label>
+                    <input type="text" name="userName" id="userName" size="18" maxlength="15" style="float:left" /><br />
+                </div>
+                <div>
+                    <label for="realName">真实姓名</label>
+                    <input type="text" name="realName" id="realName" size="18" maxlength="15" style="float:left" /><br />
                 </div>
                 <div>
                     <label for="identity">身份</label>
@@ -213,11 +220,11 @@
                 </div>
                 <div>
                     <label for="contactPhone">联系手机</label>
-                    <input type="text" name="contactPhone" id="contactPhone" size="18" maxlength="15" style="float:left" /><br />
+                    <input type="text" name="contactPhone" id="contactPhone" size="18" maxlength="15" style="float:left" onkeyup="this.value=this.value.replace(/[^\d]/g,'')"/><br />
                 </div>
                 <div>
                     <label for="password">输入密码</label>
-                    <input type="password" name="password" id="password" size="18" maxlength="15" style="float:left" /><br />
+                    <input type="password" name="password" id="password" size="18" maxlength="15" style="float:left" onChange="MinLength()"/><span id="minlength"></span><br />
                 </div>
                 <div>
                     <label for="password">重复密码</label>
@@ -235,23 +242,25 @@
                     <label for="java">技术</label>
                     <table style="text-align:left">
                         <tr>
-                            <td width="70"><input type="checkbox" id="java" style="float:left;vertical-align:middle"> java</td>
-                            <td width="70"><input type="checkbox" id="c#" style="float:left;vertical-align:middle"> c#</td>
-                            <td width="70"><input type="checkbox" id="c++" style="float:left;vertical-align:middle"> c++</td>
-                            <td width="70"><input type="checkbox" id="php" style="float:left;vertical-align:middle"> php</td>
+                            <td width="80"><input type="checkbox" id="java" style="float:left;vertical-align:middle"> java</td>
+                            <td width="80"><input type="checkbox" id="c#" style="float:left;vertical-align:middle"> c#</td>
+                            <td width="80"><input type="checkbox" id="c++" style="float:left;vertical-align:middle"> c++</td>
+                            <td width="80"><input type="checkbox" id="php" style="float:left;vertical-align:middle"> php</td>
+                            <td width="80"><input type="checkbox" id=".net" style="float:left;vertical-align:middle"> .net</td>
                         </tr>
                         <tr>
-                            <td width="70"><input type="checkbox" id=".net" style="float:left;vertical-align:middle"> .net</td>
-                            <td width="70"><input type="checkbox" id="sql" style="float:left;vertical-align:middle"> sql</td>
-                            <td width="70"><input type="checkbox" id="html5" style="float:left;vertical-align:middle"> html5</td>
-                            <td width="70"><input type="checkbox" id="pathon" style="float:left;vertical-align:middle"> pathon</td>
+                            <td width="80"><input type="checkbox" id="android" style="float:left;vertical-align:middle"> android</td>
+							<td width="80"><input type="checkbox" id="ios" style="float:left;vertical-align:middle"> ios</td>                    
+                            <td width="80"><input type="checkbox" id="sql" style="float:left;vertical-align:middle"> sql</td>
+                            <td width="80"><input type="checkbox" id="html5" style="float:left;vertical-align:middle"> html5</td>
+                            <td width="80"><input type="checkbox" id="pathon" style="float:left;vertical-align:middle"> pathon</td>
                         </tr>
                     </table>
                 </div>
                 <div>
                     <table style="text-align:left">
                         <tr>
-                            <td width="70">
+                            <td width="100">
                                 <input type="submit" id="submit" value="提交">
                             </td>
                             <td><input type="reset" id="reset"></td>
@@ -274,6 +283,31 @@
                 document.getElementById("tishi").innerHTML = "<font color='red'>两次密码不相同</font>";
                 document.getElementById("submit").disabled = true;
             }
+            
+        }
+        function MinLength() {
+            var pw1 = document.getElementById("password").value;
+            if (pw1.length>=8) {
+                document.getElementById("minlength").innerHTML = "<font color='green'></font>";
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("minlength").innerHTML = "<font color='red'>密码长度须超过8位</font>";
+                document.getElementById("submit").disabled = true;
+            }
+            
+        }
+        function submit_check(){
+        	for(var i=0;i<document.register_form.elements.length-1;i++)
+            {
+             if(document.register_form.elements[i].value=="")
+             {
+                 document.register_form.elements[i].focus();
+              alert("当前表单不能有空项");
+              return false;
+             }
+            }
+        	return true;
         }
     </script>
     <!-- END OF YOUR CODE#00 -->
