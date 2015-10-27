@@ -11,15 +11,15 @@
     <!-- BOOTSTRAP#01 -->
     <script src="../../js/jquery/2.0.0/jquery.min.js"></script>
     <script src="../../js/3.0.3/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery/jquery-latest.js"></script>
-    <script type="text/javascript" src="js/default.js"></script>
+    <script type="text/javascript" src="../../js/jquery/jquery-latest.js"></script>
+    <script type="text/javascript" src="../../js/default.js"></script>
     <link href="../../css/bootstrap.min.css" rel="stylesheet" />
 	<link href="../../css/default.css" rel="stylesheet" />
 		<!-- END OF BOOTSTRAP#01 -->
 	<link href="../../css/project.css" rel="stylesheet" />
     </head>
     <body>
-	
+
 	<!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
 
     <!-- NAVAIGATION#02 -->
@@ -29,6 +29,40 @@
             <span id="btn-add" class="glyphicon glyphicon-plus" style="font-size:40px; color:#fff"></span>
         </a>
     </div>
+
+    <!-- MODAL-AREGISTER -->
+    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">登陆</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="box-projectadd">
+                        <div class="add-left">
+                            <div>
+                                用户名：
+                            </div>
+                            <input type="text" id="username">
+                        </div>
+
+                        <div class="add-left">
+                            <div class="project-adding">
+                                密码：
+                            </div>
+                            <input type="text" id="password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="../../register.html">注册</a>
+                    <a type="button" class="btn btn-primary" href="../../register">登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- MODAL-ADD -->
     <div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -82,8 +116,8 @@
 
             <!-- LEFT-NAV -->
             <ul class="nav navbar-nav navbar">
-                <li><a class="top" href="#">所有项目</a></li>
-                <li><a class="top" href="#">实验室</a></li>
+                <li><a class="top" href="../..//html/project/projectlist.html">所有项目</a></li>
+                <li><a class="top" href="../..//html/project/projectview.html">实验室</a></li>
             </ul>
 
             <!-- RIGHT-NAV -->
@@ -188,9 +222,9 @@
 					</div>
 					</div>
 				</div>
-			
-			
-			
+
+
+
 				<div class="col-md-3 colunm">
 						<div style="padding-bottom:20px;">
 							<img style="width:320px;height:180px;border-radius:10px;" src="../../img/background-img1.jpg"  />
@@ -262,7 +296,7 @@
 								  </div>
 							   </div>
 							   <!-- 轮播（Carousel）导航 -->
-							   
+
 								<a class="c-control" href="#myCarousel" data-slide="prev">
 								<span class="glyphicon glyphicon-chevron-left"></span></a>
 								<a class="c-control right " href="#myCarousel" data-slide="next">
@@ -271,19 +305,19 @@
 							</div>
 							</div>
 						</div>
-						
-						
-				
+
+
+
 					</div>
 			</div>
-				
-	
-		
-		
-		
+
+
+
+
+
 		<!-- END OF YOUR CODE#00 -->
     </div>
-	
+
 
 	<!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
 
