@@ -94,3 +94,30 @@
 		border:2px solid #000000;
 		margin-top:0px;
 		}
+
+#project-name{
+    color:#fff;
+    font-weight:bolder;
+    text-shadow:#595353 2px 2px 6px;
+    margin-top:50px;
+}
+
+#project-comment{
+	color:#fff;
+    text-shadow:#595353 2px 2px 6px;
+    margin-bottom:1em;
+}
+
+#join{
+	margin-bottom:30px;
+}
+
+#comment-box{
+	padding:20px;
+	margin-bottom:0px;
+}
+
+#comment-box > p{
+	height:170px;
+	margin-left:0.5em;
+}
