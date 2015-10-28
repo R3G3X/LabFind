@@ -1,92 +1,92 @@
-ÏîÄ¿{
-	ÏîÄ¿¸ÅÀÀ{project-list.html
-		ÏîÄ¿Ãû³Æ
-		´´½¨ÈË
-		ÏîÄ¿¼ò½é
-		ÒÑ¾­¼ÓÈëµÄÈËÊý
-		tag[·¢²¼ÕßÀàÐÍ¡¢¹æÄ£¡¢ÓïÑÔ[Æ½Ì¨]¡¢ÖÜÆÚ¡¢ËùÊôÊµÑéÊÒ(ÏîÄ¿×é)¡¢ÊÕÈë]
-		²é¿´ÏêÏ¸ÐÅÏ¢()
+é¡¹ç›®{
+	é¡¹ç›®æ¦‚è§ˆ{project-list.html
+		é¡¹ç›®åç§°
+		åˆ›å»ºäºº
+		é¡¹ç›®ç®€ä»‹
+		å·²ç»åŠ å…¥çš„äººæ•°
+		tag[å‘å¸ƒè€…ç±»åž‹ã€è§„æ¨¡ã€è¯­è¨€[å¹³å°]ã€å‘¨æœŸã€æ‰€å±žå®žéªŒå®¤(é¡¹ç›®ç»„)ã€æ”¶å…¥]
+		æŸ¥çœ‹è¯¦ç»†ä¿¡æ¯()
 	}
-	¾ßÌåÄÚÈÝ:ÏîÄ¿¸ÅÀÀ{project-view.html
-		ÏîÄ¿ÐèÇó
-		¾ßÌåÒÑ¾­¼ÓÈëµÄÈË
-		ÁªÏµ·½Ê½[]
-		[ÏêÏ¸½éÉÜ]
-		[ÓëÎÒÁªÏµ()]
-		Ñ§Éú:±¨Ãû²Î¼Ó()
+	å…·ä½“å†…å®¹:é¡¹ç›®æ¦‚è§ˆ{project-view.html
+		é¡¹ç›®éœ€æ±‚
+		å…·ä½“å·²ç»åŠ å…¥çš„äºº
+		è”ç³»æ–¹å¼[]
+		[è¯¦ç»†ä»‹ç»]
+		[ä¸Žæˆ‘è”ç³»()]
+		å­¦ç”Ÿ:æŠ¥åå‚åŠ ()
 	}
 		
 }
 
-¸öÈË{
-	Ö÷Ò³{person-view/view.html
-		Í·Ïñ
-		Ãû×Ö
-		Ò»¾ä»°¼ò½é
-		ÀÏÊ¦/Ñ§Éú
-		¶¯Ì¬{
-			ÓÐÈË¼ÓÈëÏîÄ¿
-			ÎÒÍê³ÉÁËÒ»¸öÏîÄ¿
+ä¸ªäºº{
+	ä¸»é¡µ{person-view/view.html
+		å¤´åƒ
+		åå­—
+		ä¸€å¥è¯ç®€ä»‹
+		è€å¸ˆ/å­¦ç”Ÿ
+		åŠ¨æ€{
+			æœ‰äººåŠ å…¥é¡¹ç›®
+			æˆ‘å®Œæˆäº†ä¸€ä¸ªé¡¹ç›®
 		}
-		ÌáÊ¾ÓÃ»§¸öÈËÐÅÏ¢ÊÇ·ñÍêÕû()
+		æç¤ºç”¨æˆ·ä¸ªäººä¿¡æ¯æ˜¯å¦å®Œæ•´()
 		
-		ÉÃ³¤ÓïÑÔ
-		¼ÓÈëµÄÏîÄ¿<a>person-view/added.html
-		ÒÑ¾­Íê³ÉµÄÏîÄ¿<a>person-view/finished.html
+		æ“…é•¿è¯­è¨€
+		åŠ å…¥çš„é¡¹ç›®<a>person-view/added.html
+		å·²ç»å®Œæˆçš„é¡¹ç›®<a>person-view/finished.html
 		
-		×¢²á{
-			ÓÃ»§Ãû
-			ÃÜÂë
-			ÖØ¸´ÃÜÂë
+		æ³¨å†Œ{
+			ç”¨æˆ·å
+			å¯†ç 
+			é‡å¤å¯†ç 
 		}
-		±à¼­¸öÈËÐÅÏ¢(ÒªÇóµÇÂ¼){ person-view/edit.html
-			[±¨ÃûÏîÄ¿Ç°Ìá]±à¼­ÊÖ»úºÅ/ÓÊÏä()
+		ç¼–è¾‘ä¸ªäººä¿¡æ¯(è¦æ±‚ç™»å½•){ person-view/edit.html
+			[æŠ¥åé¡¹ç›®å‰æ]ç¼–è¾‘æ‰‹æœºå·/é‚®ç®±()
 			
-			²é¿´±¨ÃûµÄÏîÄ¿()
-			[ÐÞ¸Ä±¨ÃûÐÅÏ¢]
-			ÍË³ö±¨Ãû()
-			ÉêÇëÍË³öÒÑ¾­¼ÓÈëµÄÏîÄ¿()
+			æŸ¥çœ‹æŠ¥åçš„é¡¹ç›®()
+			[ä¿®æ”¹æŠ¥åä¿¡æ¯]
+			é€€å‡ºæŠ¥å()
+			ç”³è¯·é€€å‡ºå·²ç»åŠ å…¥çš„é¡¹ç›®()
 			
 		}
-		·¢²¼ÏîÄ¿{
-			·¢²¼ÐÂÏîÄ¿() class="nav-bar"[MODAL]
+		å‘å¸ƒé¡¹ç›®{
+			å‘å¸ƒæ–°é¡¹ç›®() class="nav-bar"[MODAL]
 			
-			ÏîÄ¿¹ÜÀí{project-edit.html
-				ÐÞ¸ÄÏîÄ¿ÐÅÏ¢(){
-					¾ßÌåÄÚÈÝ{
-						¹Ø¼üÐÅÏ¢£ºtag¡¢ÈË
+			é¡¹ç›®ç®¡ç†{project-edit.html
+				ä¿®æ”¹é¡¹ç›®ä¿¡æ¯(){
+					å…·ä½“å†…å®¹{
+						å…³é”®ä¿¡æ¯ï¼štagã€äºº
 					}
 				}
-				ÐÞ¸ÄËùÊô×é()
-				²é¿´±¨ÃûÖÐµÄÈË()
-				ÉóºË()
-				¿ª¹Ø±¨ÃûÍ¨µÀ()
+				ä¿®æ”¹æ‰€å±žç»„()
+				æŸ¥çœ‹æŠ¥åä¸­çš„äºº()
+				å®¡æ ¸()
+				å¼€å…³æŠ¥åé€šé“()
 			}
 		}
 	}
 }
 
-[×é]{
-	ÁÐ±í{ lab-list.html
-		Ã»ÓÐtag
-		Ãû×Ö
-		ÏîÄ¿Êý
-		Í¼
+[ç»„]{
+	åˆ—è¡¨{ lab-list.html
+		æ²¡æœ‰tag
+		åå­—
+		é¡¹ç›®æ•°
+		å›¾
 		
 	}
-	Ö÷Ò³{ lab-view.html
-		Ãû×Ö
-		Ò»¾ä»°¼ò½é
-		ÀÏÊ¦/Ñ§Éú
-		¶¯Ì¬{
-			ÓÐÈË·¢²¼ÁËÏîÄ¿
+	ä¸»é¡µ{ lab-view.html
+		åå­—
+		ä¸€å¥è¯ç®€ä»‹
+		è€å¸ˆ/å­¦ç”Ÿ
+		åŠ¨æ€{
+			æœ‰äººå‘å¸ƒäº†é¡¹ç›®
 		}
 		
-		ÒÑ¾­Íê³ÉµÄÏÂÊôÏîÄ¿
-		ÕýÔÚ½øÐÐµÄÏÂÊôÏîÄ¿
-		ÏÂÊôÖ¸µ¼ÀÏÊ¦
+		å·²ç»å®Œæˆçš„ä¸‹å±žé¡¹ç›®
+		æ­£åœ¨è¿›è¡Œçš„ä¸‹å±žé¡¹ç›®
+		ä¸‹å±žæŒ‡å¯¼è€å¸ˆ
 	}
 }
-[Ð¡×é]
+[å°ç»„]
 
-Ê×Ò³:index.html
+é¦–é¡µ:index.html
