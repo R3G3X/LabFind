@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-10-29 00:48:06
+* @Last Modified time: 2015-10-29 01:12:57
 */
 
 $(document).ready(function(){
@@ -30,11 +30,11 @@ $(document).ready(function(){
     })
 
     $("#user-login").click(function(){
-        $.post("momsg.php",{"uername":$("#username").val()},function(data){
-            if(data==0){
+        $.post("momsg.php",{"uername":$("#username").val()},function(status){
+            if(status==200){
                 alert("4");
             }
-            if(data==1){
+            if(status==400){
                 alert()
             }
         })
