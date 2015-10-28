@@ -9,10 +9,10 @@
 	try {
 		String username = "MsJiang";
 		String password = "12345678";
-		
+
 		username = request.getParameter("username");
 		password = request.getParameter("password");
-		
+
 		Connection con;
 		Statement stmt;
 		ResultSet rs;
@@ -33,9 +33,9 @@
 				.executeQuery("select count(*) record_ from(select username from Regex_db.userbase where username = \'"
 						+ username + "\')as a");
 		int rs_count = 0;
-		if(rs.next())    
-		  {    
-			  rs_count=rs.getInt("record_");    
+		if(rs.next())
+		  {
+			  rs_count=rs.getInt("record_");
 		  };
 		if(rs_count!=1){
 			out.println("1");//用户不存在
