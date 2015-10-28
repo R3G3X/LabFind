@@ -20,7 +20,7 @@ $(document).ready(function(){
                 "founder-name":$("#founder-name").val(),
                 "brief":$("#brief").val()},
                 function(data){
-                    alert(data);
+                    $(".modal-body").html(data);
                 })
     })
 
