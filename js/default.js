@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-10-28 17:03:17
+* @Last Modified time: 2015-10-28 22:43:01
 */
 
 $(document).ready(function(){
@@ -15,17 +15,17 @@ $(document).ready(function(){
             $("#page-add").css("display", "none")
     })
     $("#change-save").click(function(){
-        $.post("momsg.php",{"project-name":$("#project-name").val()},function(data){
+        $.post("hello.jsp",{"project-name":$("#project-name").val()},function(data){
             if(data==0){
                 alert("1");
             }
         })
-        $.post("momsg.php",{"founder-name":$("#founder-name").val()},function(data){
+        $.post("hello.jsp",{"founder-name":$("#founder-name").val()},function(data){
             if(data==0){
                 alert("2");
             }
         })
-        $.post("momsg.php",{"brief":$("#brief").val()},function(data){
+        $.post("hello.jsp",{"brief":$("#brief").val()},function(data){
             if(data==0){
                 alert("3");
             }
