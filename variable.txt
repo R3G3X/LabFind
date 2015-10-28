@@ -1,77 +1,77 @@
-²Ù×÷{
-	×¢²á²Ù×÷{ register.jsp
-		ÓÃ»§Ãû		username-register(string)
-		ÕæÊµĞÕÃû	realname-register(string)
-		ÃÜÂë		password-register(string)
-		ÖØ¸´ÃÜÂë	repasswd-register(string)
+æ“ä½œ{
+	æ³¨å†Œæ“ä½œ{ register.jsp
+		ç”¨æˆ·å		username-register(string)
+		çœŸå®å§“å	realname-register(string)
+		å¯†ç 		password-register(string)
+		é‡å¤å¯†ç 	repasswd-register(string)
 	}
 	
-	µÇÂ¼²Ù×÷{ login.jsp
-		ÓÃ»§Ãû 	username(string)
-		ÃÜÂë 	password(string)
+	ç™»å½•æ“ä½œ{ login.jsp
+		ç”¨æˆ·å 	username(string)
+		å¯†ç  	password(string)
 	}
 
-	´´½¨ÏîÄ¿{ project-create.jsp
-		ÏîÄ¿Ãû³Æ 	project-name(string)
-		´´½¨ÈË 		founder(int id)
-		¼ò½é 		brief(string)
-		ĞèÒªµÄÈËÊı 	require-num(string)
-		ÓïÑÔ		language(string)
+	åˆ›å»ºé¡¹ç›®{ project-create.jsp
+		é¡¹ç›®åç§° 	project-name(string)
+		åˆ›å»ºäºº 		founder(int id)
+		ç®€ä»‹ 		brief(string)
+		éœ€è¦çš„äººæ•° 	require-num(string)
+		è¯­è¨€		language(string)
 		[more...]
 	}
 	
-	ËÑË÷{ search.jsp
-		ËÑË÷ÄÚÈİ	search(string)
+	æœç´¢{ search.jsp
+		æœç´¢å†…å®¹	search(string)
 	}
-	ÏîÄ¿¹ÜÀí¡¢¼ÓÈëÏîÄ¿ [´ıÍê³É]
+	é¡¹ç›®ç®¡ç†ã€åŠ å…¥é¡¹ç›® [å¾…å®Œæˆ]
 }
 
-Êı¾İ¿â{
-	ÓÃ»§{
-		ÓÃ»§id			id
-		ÓÃ»§Ãû 			username
-		ÃÜÂë 			password
-		ÕæÊµĞÕÃû		realname
-		Ò»¾ä»°¼ò½é		userintro
-		ÊÖ»úºÅ			phone
-		Í·Ïñ			avatar
-		ÊÇ·ñÊÇÀÏÊ¦		isteacher				(0,1)
-		ÓÊÏä			mailaddress
-		ÒÑ¾­¼ÓÈëµÄÏîÄ¿	projectadded			([id1,id2,id3])
-		¼ÓÈëÏîÄ¿µÄÊ±¼ä 	projectedaddedtime		([time1,time2,time3])
-		ÒÑ¾­Íê³ÉµÄÏîÄ¿	projectfinished			([id1,id2,id3])
-		Íê³ÉÏîÄ¿µÄÊ±¼ä 	projectedfinishedtime	([time1,time2,time3])
-		¼ÓÈëµÄÊµÑéÊÒ	labadded				([labid1,labid2,labid3])
-	ÏîÄ¿{
-		ÏîÄ¿id			id
-		ÏîÄ¿Ãû³Æ		projectname
-		´´½¨Ê±¼ä		createtime
-		Íê³ÉÊ±¼ä		fintime
-		´´½¨ÈË			userid
-		¼ò½é			projectintro
-		ĞèÒªµÄÈËÊı		requirenum
-		ÓïÑÔ			language
-		ÏîÄ¿Í¼Æ¬		image
-		ÒÑ¾­¼ÓÈëµÄÈË	useradded				([id1,id2,id3])
-		ÏîÄ¿×´Ì¬		projectstatus			(0:pending 1:inprogess 2:finished)
+æ•°æ®åº“{
+	ç”¨æˆ·{
+		ç”¨æˆ·id			id
+		ç”¨æˆ·å 			username
+		å¯†ç  			password
+		çœŸå®å§“å		realname
+		ä¸€å¥è¯ç®€ä»‹		userintro
+		æ‰‹æœºå·			phone
+		å¤´åƒ			avatar
+		æ˜¯å¦æ˜¯è€å¸ˆ		isteacher				(0,1)
+		é‚®ç®±			mailaddress
+		å·²ç»åŠ å…¥çš„é¡¹ç›®	projectadded			([id1,id2,id3])
+		åŠ å…¥é¡¹ç›®çš„æ—¶é—´ 	projectedaddedtime		([time1,time2,time3])
+		å·²ç»å®Œæˆçš„é¡¹ç›®	projectfinished			([id1,id2,id3])
+		å®Œæˆé¡¹ç›®çš„æ—¶é—´ 	projectedfinishedtime	([time1,time2,time3])
+		åŠ å…¥çš„å®éªŒå®¤	labadded				([labid1,labid2,labid3])
+	é¡¹ç›®{
+		é¡¹ç›®id			id
+		é¡¹ç›®åç§°		projectname
+		åˆ›å»ºæ—¶é—´		createtime
+		å®Œæˆæ—¶é—´		fintime
+		åˆ›å»ºäºº			userid
+		ç®€ä»‹			projectintro
+		éœ€è¦çš„äººæ•°		requirenum
+		è¯­è¨€			language
+		é¡¹ç›®å›¾ç‰‡		image
+		å·²ç»åŠ å…¥çš„äºº	useradded				([id1,id2,id3])
+		é¡¹ç›®çŠ¶æ€		projectstatus			(0:pending 1:inprogess 2:finished)
 	}
-	ÊµÑé{
-		ÊµÑéÊÒid		id
-		Ãû³Æ			labname
-		Ò»¾ä»°¼ò½é		labintro
-		Ö¸µ¼ÀÏÊ¦		leader					([userid1,userid2,userid3])
-		ÕıÔÚ½øĞĞµÄÏîÄ¿	labinprogess			([pjid1,pjid2,pjid3])
-		ÏîÄ¿¿ªÊ¼Ê±¼ä	labstarttime			([time1,time2,time3])
-		ÒÑ¾­Íê³ÉµÄÏîÄ¿	labfinished				([pjid1,pjid2,pjid3])
-		ÏîÄ¿Íê³ÉÊ±¼ä	labfintime				([time1,time2,time3])
-		¼ÓÈëÕß			useradded				([userid1,userid2,userid3])
+	å®éªŒ{
+		å®éªŒå®¤id		id
+		åç§°			labname
+		ä¸€å¥è¯ç®€ä»‹		labintro
+		æŒ‡å¯¼è€å¸ˆ		leader					([userid1,userid2,userid3])
+		æ­£åœ¨è¿›è¡Œçš„é¡¹ç›®	labinprogess			([pjid1,pjid2,pjid3])
+		é¡¹ç›®å¼€å§‹æ—¶é—´	labstarttime			([time1,time2,time3])
+		å·²ç»å®Œæˆçš„é¡¹ç›®	labfinished				([pjid1,pjid2,pjid3])
+		é¡¹ç›®å®Œæˆæ—¶é—´	labfintime				([time1,time2,time3])
+		åŠ å…¥è€…			useradded				([userid1,userid2,userid3])
 	}
-	ÀÏÊ¦{
-		ĞÕÃû			name
-		Ö°³Æ			level
-		ÑĞ¾¿·½Ïò		area
-		¶ÔÓ¦id			userid
+	è€å¸ˆ{
+		å§“å			name
+		èŒç§°			level
+		ç ”ç©¶æ–¹å‘		area
+		å¯¹åº”id			userid
 	}
 }
 
-*timeµÄ¸ñÊ½ÎªYYYY-MM-DD
+*timeçš„æ ¼å¼ä¸ºYYYY-MM-DD
