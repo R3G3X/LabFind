@@ -1,0 +1,77 @@
+操作{
+	注册操作{ register.jsp
+		用户名		username-register(string)
+		真实姓名	realname-register(string)
+		密码		password-register(string)
+		重复密码	repasswd-register(string)
+	}
+	
+	登录操作{ login.jsp
+		用户名 	username(string)
+		密码 	password(string)
+	}
+
+	创建项目{ project-create.jsp
+		项目名称 	project-name(string)
+		创建人 		founder(int id)
+		简介 		brief(string)
+		需要的人数 	require-num(string)
+		语言		language(string)
+		[more...]
+	}
+	
+	搜索{ search.jsp
+		搜索内容	search(string)
+	}
+	项目管理、加入项目 [待完成]
+}
+
+数据库{
+	用户{
+		用户id			id
+		用户名 			username
+		密码 			password
+		真实姓名		realname
+		一句话简介		userintro
+		手机号			phone
+		头像			avatar
+		是否是老师		isteacher				(0,1)
+		邮箱			mailaddress
+		已经加入的项目	projectadded			([id1,id2,id3])
+		加入项目的时间 	projectedaddedtime		([time1,time2,time3])
+		已经完成的项目	projectfinished			([id1,id2,id3])
+		完成项目的时间 	projectedfinishedtime	([time1,time2,time3])
+		加入的实验室	labadded				([labid1,labid2,labid3])
+	项目{
+		项目id			id
+		项目名称		projectname
+		创建时间		createtime
+		完成时间		fintime
+		创建人			userid
+		简介			projectintro
+		需要的人数		requirenum
+		语言			language
+		项目图片		image
+		已经加入的人	useradded				([id1,id2,id3])
+		项目状态		projectstatus			(0:pending 1:inprogess 2:finished)
+	}
+	实验{
+		实验室id		id
+		名称			labname
+		一句话简介		labintro
+		指导老师		leader					([userid1,userid2,userid3])
+		正在进行的项目	labinprogess			([pjid1,pjid2,pjid3])
+		项目开始时间	labstarttime			([time1,time2,time3])
+		已经完成的项目	labfinished				([pjid1,pjid2,pjid3])
+		项目完成时间	labfintime				([time1,time2,time3])
+		加入者			useradded				([userid1,userid2,userid3])
+	}
+	老师{
+		姓名			name
+		职称			level
+		研究方向		area
+		对应id			userid
+	}
+}
+
+*time的格式为YYYY-MM-DD
