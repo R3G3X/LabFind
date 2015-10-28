@@ -7,7 +7,7 @@
     <!-- meta -->
     <title>LAB FIND</title>
 
-    
+
     <!-- BOOTSTRAP#01 -->
     <script src="js/jquery/2.0.0/jquery.min.js"></script>
     <script src="js/3.0.3/bootstrap.min.js"></script>
@@ -17,7 +17,7 @@
     <link href="css/default.css" rel="stylesheet" />
     <!-- END OF BOOTSTRAP#01 -->
     <!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
-    
+
     <link href="css/flat/red.css" rel="stylesheet">
     <script src="js/icheck.js"></script>
     <script>
@@ -227,7 +227,7 @@
                 </div>
                 <div>
                     <label for="password">输入密码</label>
-                    <input type="password" name="password" id="password" size="18" maxlength="15" style="float:left" onChange="MinLength()"/><span id="minlength"></span><br />
+                    <input type="password" name="password" id="password3" size="18" maxlength="15" style="float:left" onChange="MinLength()"/><span id="minlength"></span><br />
                 </div>
                 <div>
                     <label for="password">重复密码</label>
@@ -253,7 +253,7 @@
                         </tr>
                         <tr>
                             <td width="80"><input type="checkbox" id="android" style="float:left;vertical-align:middle"> android</td>
-							<td width="80"><input type="checkbox" id="ios" style="float:left;vertical-align:middle"> ios</td>                    
+							<td width="80"><input type="checkbox" id="ios" style="float:left;vertical-align:middle"> ios</td>
                             <td width="80"><input type="checkbox" id="sql" style="float:left;vertical-align:middle"> sql</td>
                             <td width="80"><input type="checkbox" id="html5" style="float:left;vertical-align:middle"> html5</td>
                             <td width="80"><input type="checkbox" id="pathon" style="float:left;vertical-align:middle"> pathon</td>
@@ -274,9 +274,9 @@
         </form>
 
     </div>
-    <script>
+    <script type="text/javascript">
         function validate() {
-            var pw1 = document.getElementById("password").value;
+            var pw1 = document.getElementById("password3").value;
             var pw2 = document.getElementById("password2").value;
             if (pw1 == pw2) {
                 document.getElementById("tishi").innerHTML = "<font color='green'></font>";
@@ -286,10 +286,10 @@
                 document.getElementById("tishi").innerHTML = "<font color='red'>两次密码不相同</font>";
                 document.getElementById("submit").disabled = true;
             }
-            
+
         }
         function MinLength() {
-            var pw1 = document.getElementById("password").value;
+            var pw1 = document.getElementById("password3").value;
             if (pw1.length>=8) {
                 document.getElementById("minlength").innerHTML = "<font color='green'></font>";
                 document.getElementById("submit").disabled = false;
@@ -298,7 +298,7 @@
                 document.getElementById("minlength").innerHTML = "<font color='red'>密码长度须超过8位</font>";
                 document.getElementById("submit").disabled = true;
             }
-            
+
         }
         function submit_check(){
         	for(var i=0;i<document.register_form.elements.length-1;i++)
