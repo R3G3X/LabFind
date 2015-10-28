@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-10-28 23:20:32
+* @Last Modified time: 2015-10-29 00:42:04
 */
 
 $(document).ready(function(){
@@ -20,7 +20,12 @@ $(document).ready(function(){
                 "founder-name":$("#founder-name").val(),
                 "brief":$("#brief").val()},
                 function(data){
-                    alert(data);
+                    if (data==1){
+                        alert("0");
+                    }
+                    else{
+                        alert("0");
+                    }
                 })
     })
 
