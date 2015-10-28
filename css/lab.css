@@ -4,11 +4,11 @@
 			margin-top:30px;
 		}
 
-		.lab-tag:active{
+.lab-tag:active{
 			background-color: #DDDDDD
 		}
 
-		.tag-box{
+.tag-box{
 			border:1px solid #DDDDDD;
 			border-radius: 10px;
 			width:240px;
@@ -16,41 +16,120 @@
 			margin:10px;
 		}
 
-		.lab-box{
+.lab-box{
 			height:240px;
 			width:240px;
 
 		}
-		.tag-image{
+.tag-image{
 			height:120px;
 			width:240px;
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
 		}
-
-		.lab-drb:link{
+.lab-drb:link{
 			 text-decoration: underline;
 			 TEXT-DECORATION:none;
 			 color:#000000;
 		}
-		.lab-drb:visited{
+.lab-drb:visited{
 			text-decoration: underline;
 			TEXT-DECORATION:none;
 			color:#000000;
 		}
-		.lab-drb:hover{
+.lab-drb:hover{
 			text-decoration: underline;
 			TEXT-DECORATION:none;
 			color:#000000;
 		}
-		.lab-drb:active{
+.lab-drb:active{
 			text-decoration: underline;
 			TEXT-DECORATION:none;
 			color:#000000;
 		}
-		.lab-text{
+.lab-text{
 			width:220px;
 			word-wrap:break-word;
             word-break:break-all;
 			margin:10px auto;
 		}
+.c-control
+{
+	position: absolute;
+	top: 30%;
+	left: 0;
+	width: 15%;
+	font-size: 40px;
+	color: #000000;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+	filter:alpha(opacity=50);
+	opacity: 0.5;
+
+}
+.c-control.right
+{
+	right: 0;
+	left: auto;
+
+}
+.man{
+	float:left;
+	list-style:none;
+	margin-left:28px;
+}
+.carosusel-avatar{
+	border:2px solid #000000;
+	margin-top:0px;
+}
+
+#project-name{
+    color:#fff;
+    font-weight:bolder;
+    text-shadow:#595353 2px 2px 6px;
+    margin-top:50px;
+}
+
+#project-comment{
+	color:#fff;
+    text-shadow:#595353 2px 2px 6px;
+    margin-bottom:1em;
+}
+
+#join{
+	margin-bottom:30px;
+}
+
+#comment-box{
+	padding:20px;
+	margin-bottom:0px;
+}
+
+#comment-box > p{
+	height:170px;
+	margin-left:0.5em;
+}
+
+.teacher-box
+{
+	border-bottom: 2px solid #B3B2B2;
+	height: 120px;
+	width:100%;
+}
+
+.teacher-head
+{
+	border: 1px solid #DDDDDD;
+	border-radius: 50px;
+	height:100px;
+	width:100px;
+	float:left;
+}
+.teacher-comment
+{
+	font-size: 20px;
+	color:#000000;
+    text-shadow:#595353 1px 1px 1px;
+    margin: 10px auto;
+    text-align: center;
+}
