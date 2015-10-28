@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-10-27 00:46:54
+* @Last Modified time: 2015-10-28 17:03:17
 */
 
 $(document).ready(function(){
@@ -36,15 +36,13 @@ $(document).ready(function(){
             if(data==0){
                 alert("4");
             }
+            if(data==1){
+                alert()
+            }
         })
         $.post("momsg.php",{"password":$("#password").val()},function(data){
             if(data==0){
                 alert("5");
-            }
-        })
-        $.post("momsg.php",{"phone_num":$("#phone_num").val()},function(data){
-            if(data==0){
-                alert("6");
             }
         })
     })
