@@ -62,10 +62,3 @@
 		out.println(e.getMessage());
 	}
 %>
-
-<title>在此处插入标题</title>
-</head>
-<body>
-
-</body>
-</html>
