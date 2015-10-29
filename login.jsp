@@ -8,8 +8,7 @@
 	try {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		boolean success = false;
-		
+
 		Connection con;
 		Statement stmt;
 		ResultSet rs;
@@ -19,18 +18,17 @@
 		String dbUser = "Captain";
 		String dbPwd = "regex12345";
 		//建立数据库连接
-		con = java.sql.DriverManager.getConnection(dbUrl, dbUser, dbPwd);
+		con = java.sql.DriverManager
+				.getConnection(dbUrl, dbUser, dbPwd);
 		//创建一个SQL声明
 		stmt = con.createStatement();
 		rs = stmt
-				.executeQuery("select count(*) record_ from(select username from Regex_db.userbase where username = \'"
-						+ username + "\' and password =\'"+password+"\')as a");
-		int rs_count = 0;		
-		if(rs.next())    
-		  {    
-			rs_count=rs.getInt("record_");    
-		  };
-		if (rs_count!=0) {
+				.executeQuery("select username from Regex_db.userbase where username = \'"
+						+ username
+						+ "\' and password =\'"
+						+ password
+						+ "\'");
+		if (rs.next()) {
 			//response.setStatus(200);//success
 			out.println("登录！");
 		} else {
