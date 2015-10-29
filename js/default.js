@@ -16,17 +16,20 @@ $(document).ready(function(){
     })
     $("#change-save").click(function(){
         $.post("hello.jsp",
-                {"project-name":$("#project-name").val(),
-                "founder-name":$("#founder-name").val(),
-                "brief":$("#brief").val()},
-                function(data){
-                    if (data==1){
-                        alert("0");
-                    }
-                    else{
-                        alert("0");
-                    }
-                })
+            {"project-name":$("#project-name").val(),
+            "founder-name":$("#founder-name").val(),
+            "brief":$("#brief").val()},
+            function(data){
+                alert(data);
+            })
+        .error(function(XMLHttpRequest, textStatus, errorThrown) { 
+           if(XMLHttpRequest.status==399){
+            alert("aaa");
+           }else{
+            alert("bbb");
+           }
+       })
+
     })
 
     $("#user-login").click(function(){
