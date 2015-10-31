@@ -14,22 +14,22 @@ $(document).ready(function(){
             // alert(" ");
             $("#page-add").css("display", "none")
     })
+
+    $("project-name").change()
+
     $("#change-save").click(function(){
         $.post("hello.jsp",
-            {"project-name":$("#project-name").val(),
-            "founder-name":$("#founder-name").val(),
-            "brief":$("#brief").val()},
-            function(data){
-                alert(data);
-            })
-        .error(function(XMLHttpRequest, textStatus, errorThrown) { 
-           if(XMLHttpRequest.status==399){
-            alert("aaa");
-           }else{
-            alert("bbb");
-           }
-       })
-
+                {"project-name":$("#project-name").val(),
+                "founder-name":$("#founder-name").val(),
+                "brief":$("#brief").val()},
+                function(data){
+                    if (data==1){
+                        alert("0");
+                    }
+                    else{
+                        alert("0");
+                    }
+                })
     })
 
     $("#user-login").click(function(){
