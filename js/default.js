@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-10-31 17:04:05
+* @Last Modified time: 2015-10-31 17:19:38
 */
 
 $(document).ready(function(){
@@ -47,9 +47,16 @@ $(document).ready(function(){
                 {"username":$("#username").val(),
                 "password":$("#password").val()},
                 function(data, status, xhr){
-                    console.log(xhr.getResponseHeader("Content-Type"));
-
+                    alert("成功登陆");
                 })
+        .error(function(data,status,e){
+            if(data.status == 400){
+                $("#check-status").html("<font color='red'>密码错误</font>");
+            }
+            else if(data.status == 401){
+                $("#check-status").html("<font color='red'>用户名不存在</font>");
+            }
+        })
     })
 
 

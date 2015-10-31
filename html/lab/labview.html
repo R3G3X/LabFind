@@ -29,7 +29,7 @@
         </a>
     </div>
 
-    <!-- MODAL-AREGISTER -->
+    <!-- MODAL-LOGIN -->
     <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -39,11 +39,14 @@
                 </div>
                 <div class="modal-body">
                     <form id="box-projectadd">
-                        <div class="add-left">
+                        <div class="add-left"><span id="check-status"></span>
                             <div>
                                 用户名：
                             </div>
                             <input type="text" id="username">
+                            <div>
+                                <span id="user-check"></span>
+                            </div>
                         </div>
 
                         <div class="add-left">
@@ -51,12 +54,15 @@
                                 密码：
                             </div>
                             <input type="text" id="password">
+                            <div>
+                                <span id="pass-check"></span>
+                            </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="../../register.html">注册</a>
-                    <a type="button" class="btn btn-primary" href="../../register">登录</a>
+                    <a href="register.html">注册</a>
+                    <button type="button" class="btn btn-primary" id="user-login">登陆</button>
                 </div>
             </div>
         </div>
@@ -232,7 +238,7 @@
 						<strong class="left-stext">完成的项目</strong>
 					</div>
 				</div>
-		
+
 			</div>
 		</div>
 
@@ -281,7 +287,7 @@
                         		</div>
                         	</div>
                         </div>
-                       
+
                     </div>
                     <div class="col-md-4 colume">
                     	 <div class="panel panel-success">
@@ -407,7 +413,7 @@
                                 </div>
                             </div>
                         </div>
-                       	
+
                     </div>
                 </div>
             </div>
