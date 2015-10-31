@@ -1,9 +1,9 @@
-操作{
+﻿操作{
 	注册操作{ register.jsp
-		用户名		username-register(string)
-		真实姓名	realname-register(string)
-		密码		password-register(string)
-		重复密码	repasswd-register(string)
+		用户名		username_register(string)
+		真实姓名	realname_register(string)
+		密码		password_register(string)
+		重复密码	repasswd_register(string)
 	}
 	
 	登录操作{ login.jsp
@@ -12,10 +12,10 @@
 	}
 
 	创建项目{ project-create.jsp
-		项目名称 	project-name(string)
+		项目名称 	project_name(string)
 		创建人 		founder(int id)
-		简介 		brief(string)
-		需要的人数 	require-num(string)
+		简介 		projectintro(string)
+		需要的人数 	require_num(string)
 		语言		language(string)
 		[more...]
 	}

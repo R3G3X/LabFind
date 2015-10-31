@@ -56,7 +56,7 @@ CREATE TABLE `projectbase` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `projectname` varchar(45) NOT NULL,
   `createtime` datetime DEFAULT NULL,
-  `fintime` datetime NOT NULL,
+  `fintime` datetime DEFAULT NULL,
   `userid` int(11) DEFAULT NULL,
   `projectintro` varchar(100) DEFAULT NULL,
   `requirenum` int(11) DEFAULT NULL,
@@ -127,7 +127,7 @@ CREATE TABLE `userbase` (
   `projectedfinishedtime` datetime DEFAULT NULL,
   `labadded` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -136,6 +136,7 @@ CREATE TABLE `userbase` (
 
 LOCK TABLES `userbase` WRITE;
 /*!40000 ALTER TABLE `userbase` DISABLE KEYS */;
+INSERT INTO `userbase` VALUES (1,'a','12345678',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `userbase` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -148,4 +149,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-29 20:18:53
+-- Dump completed on 2015-10-31 18:28:30
