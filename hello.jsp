@@ -1,9 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 pageEncoding="UTF-8"%>
 <%
-String founder_name=request.getParameter("founder-name");
-String project_name=request.getParameter("project-name");
-String brief=request.getParameter("brief");
+String user=request.getParameter("username");
+String pass=request.getParameter("password");
 %>
 
-<%=founder_name=="1"?1:0%>
+<%
+if(user.equals("1") && pass.equals("1")){
+    response.setStatus(200);
+}
+else if(user.equals("1")){
+    response.setStatus(400);
+}
+else{
+    response.setStatus(401);
+}
+%>

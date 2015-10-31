@@ -29,10 +29,6 @@
         });
     </script>
     <style>
-        body {
-            text-align: center;
-        }
-
         fieldset label {
             float: left;
             width: 80px;
@@ -71,6 +67,7 @@
     </div>
 
     <!-- MODAL-AREGISTER -->
+    <!-- MODAL-AREGISTER -->
     <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -85,6 +82,9 @@
                                 用户名：
                             </div>
                             <input type="text" id="username">
+                            <div>
+                                <span id="user-check"></span>
+                            </div>
                         </div>
 
                         <div class="add-left">
@@ -92,12 +92,15 @@
                                 密码：
                             </div>
                             <input type="text" id="password">
+                            <div>
+                                <span id="pass-check"></span>
+                            </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <a href="register.html">注册</a>
-                    <a type="button" class="btn btn-primary" href="../../register">登录</a>
+                    <button type="button" class="btn btn-primary" id="user-login">登陆</button>
                 </div>
             </div>
         </div>
@@ -208,7 +211,7 @@
         <!-- INSERT YOUR CODE HERE#00-->
         <form name="register_form" method="post" action="accessTest.jsp" onsubmit="return submit_check()">
             <fieldset>
-                <legend>用户注册</legend>
+                <legend style="text-align:center;">用户注册</legend>
                 <div>
                     <label for="Name">用户名</label>
                     <input type="text" name="userName" id="userName" size="18" maxlength="15" style="float:left" /><br />

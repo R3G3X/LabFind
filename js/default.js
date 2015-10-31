@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-10-29 01:12:57
+* @Last Modified time: 2015-10-31 17:04:05
 */
 
 $(document).ready(function(){
@@ -15,10 +15,64 @@ $(document).ready(function(){
             $("#page-add").css("display", "none")
     })
 
-    $("project-name").change()
+// LOGIN-CHECK
+    $("#username").blur(function(){
+        if($("#username").val().length==0){
+            $("#user-check").html("<font color='red'>用户名不能为空</font>");
+            $("#user-login").attr("disabled",true);
+        }
+        else{
+            $("#user-check").html("");
+            if($("#password").val().length!=0){
+                $("#user-login").removeAttr("disabled");
+            }
+        }
+    })
+    $("#password").blur(function(){
+        if($("#password").val().length==0){
+            $("#pass-check").html("<font color='red'>用户名不能为空</font>");
+            $("#user-login").attr("disabled",true);
+        }
+        else{
+            $("#pass-check").html("");
+            if($("#username").val().length!=0){
+                $("#user-login").removeAttr("disabled");
+            }
+        }
+    })
+
+// LOGIN-POST
+    $("#user-login").click(function(){
+        $.post("hello.jsp",
+                {"username":$("#username").val(),
+                "password":$("#password").val()},
+                function(data, status, xhr){
+                    console.log(xhr.getResponseHeader("Content-Type"));
+
+                })
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     $("#change-save").click(function(){
-        $.post("hello.jsp",
+        $.post("hellof.jsp",
                 {"project-name":$("#project-name").val(),
                 "founder-name":$("#founder-name").val(),
                 "brief":$("#brief").val()},
@@ -32,21 +86,6 @@ $(document).ready(function(){
                 })
     })
 
-    $("#user-login").click(function(){
-        $.post("momsg.php",{"uername":$("#username").val()},function(status){
-            if(status==200){
-                alert("4");
-            }
-            if(status==400){
-                alert()
-            }
-        })
-        $.post("momsg.php",{"password":$("#password").val()},function(data){
-            if(data==0){
-                alert("5");
-            }
-        })
-    })
     $("#exit").click(function(){
             // alert(" ");
             $(".dropdown").addClass("hidden");
