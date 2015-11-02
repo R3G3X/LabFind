@@ -9,17 +9,20 @@
 		}
 
 		.tag-box{
-			border:1px solid #DDDDDD;
-			border-top-left-radius: 10px;
-			border-top-right-radius: 10px;
 			width:240px;
 			height:280px;
 			margin:10px;
 		}
 
 		.project-box{
+			border:1px solid #DDDDDD;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
 			height:240px;
 			width:240px;
+			margin:auto;
+			left:0;
+			right:0;
 
 		}
 		.creator-box{
