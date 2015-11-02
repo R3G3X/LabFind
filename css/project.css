@@ -1,7 +1,10 @@
+
 .project-tag{
 			float:left;
 			list-style:none;
-			margin-top:30px;
+			margin-top:50px;
+			margin-right:29px;
+			height:320px;
 		}
 
 		.project-tag:active{
@@ -11,18 +14,17 @@
 		.tag-box{
 			width:240px;
 			height:280px;
-			margin:10px;
 		}
 
 		.project-box{
 			border:1px solid #DDDDDD;
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
-			height:280px;
+			height:250px;
 			width:240px;
 		}
 		.creator-box{
-			height:80px;
+			height:68px;
 			width:240px;
 			border:1px solid #DDDDDD;
 			border-top:none;
@@ -120,10 +122,31 @@
 	margin-left:0.5em;
 }
 h3{
+	margin-top:15px;
 	text-align:center;
 }
 
 .require{
-	margin-bottom:20px;
-	margin-right:20px;
+	float:right;
+	margin-right:10px;
+}
+
+#img-down{
+	margin-top:12px;
+	margin-right:6px;
+	margin-left:12px;
+	border:2px solid #3C6186;
+}
+
+#person-info{
+	font-size:16px;
+	margin-right:61px;
+}
+
+h6{
+
+	text-align:center;
+	padding-top:;
+	margin-top:0px;
+
 }
