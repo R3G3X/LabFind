@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-02 16:11:30
+* @Last Modified time: 2015-11-02 20:42:11
 */
 
 $(document).ready(function(){
@@ -49,12 +49,12 @@ $(document).ready(function(){
                 "password":$("#password").val()},
                 function(data, status, xhr){
                     alert("成功登陆");
-                    $("#password").val("");
-                    $("#username").val("");
                     $("#check-status").html("");
                     $("#login").addClass("hidden");
-                    $("#user-info").removeClass("hidden");
-                    $("#user-pic").removeClass("hidden");
+                    $.cookie("userid",$("#username").val(),{expire:7,path:"/"});
+                    $("#password").val("");
+                    $("#username").val("");
+                    loginId();
                 })
         .error(function(data,status,e){
             if(data.status == 400){
@@ -74,7 +74,10 @@ $(document).ready(function(){
 
 
 
-
+    function loginId(){
+        var userid=$.cookie("userid");
+        // alert(userid);
+    }
 
 
 
