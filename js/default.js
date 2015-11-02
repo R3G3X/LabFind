@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-02 20:42:11
+* @Last Modified time: 2015-11-03 03:26:28
 */
 
 $(document).ready(function(){
@@ -105,7 +105,7 @@ $(document).ready(function(){
 
     $("#exit").click(function(){
             // alert(" ");
-            $("#user-info").addClass("hidden");
+            $(".dropdown").addClass("hidden");
             $("#user-pic").addClass("hidden");
             $("#login").removeClass("hidden");
     })
