@@ -2,10 +2,11 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-10-31 17:19:38
+* @Last Modified time: 2015-11-02 16:11:30
 */
 
 $(document).ready(function(){
+    $("#user-login").attr("disabled",true);
     $("#project-add > a").click(function(){
             // alert(" ");
             $("#page-add").css("display", "block")
@@ -30,7 +31,7 @@ $(document).ready(function(){
     })
     $("#password").blur(function(){
         if($("#password").val().length==0){
-            $("#pass-check").html("<font color='red'>用户名不能为空</font>");
+            $("#pass-check").html("<font color='red'>密码不能为空</font>");
             $("#user-login").attr("disabled",true);
         }
         else{
@@ -48,6 +49,12 @@ $(document).ready(function(){
                 "password":$("#password").val()},
                 function(data, status, xhr){
                     alert("成功登陆");
+                    $("#password").val("");
+                    $("#username").val("");
+                    $("#check-status").html("");
+                    $("#login").addClass("hidden");
+                    $("#user-info").removeClass("hidden");
+                    $("#user-pic").removeClass("hidden");
                 })
         .error(function(data,status,e){
             if(data.status == 400){
@@ -95,9 +102,8 @@ $(document).ready(function(){
 
     $("#exit").click(function(){
             // alert(" ");
-            $(".dropdown").addClass("hidden");
+            $("#user-info").addClass("hidden");
             $("#user-pic").addClass("hidden");
             $("#login").removeClass("hidden");
     })
-
 })
