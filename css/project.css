@@ -18,12 +18,8 @@
 			border:1px solid #DDDDDD;
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
-			height:240px;
+			height:280px;
 			width:240px;
-			margin:auto;
-			left:0;
-			right:0;
-
 		}
 		.creator-box{
 			height:80px;
@@ -36,7 +32,7 @@
 
 		.tag-image{
 			height:100px;
-			width:240px;
+			width:239px;
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
 		}
@@ -62,9 +58,8 @@
 			color:#000000;
 		}
 		.project-text{
+			padding-left:22px;
 			width:220px;
-			word-wrap:break-word;
-            word-break:break-all;
 			margin-10px;
 		}
 .c-control
@@ -123,4 +118,12 @@
 #comment-box > p{
 	height:170px;
 	margin-left:0.5em;
+}
+h3{
+	text-align:center;
+}
+
+.require{
+	margin-bottom:20px;
+	margin-right:20px;
 }
