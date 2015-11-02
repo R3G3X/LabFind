@@ -1,7 +1,7 @@
 .lab-tag{
 			float:left;
 			list-style:none;
-			margin-top:30px;
+			margin-top:40px;
 		}
 
 .lab-tag:active{
@@ -179,7 +179,7 @@
 .box-row
 {
 	width:100%;
-	border-bottom:1px solid #DDDDDD; 
+	border-bottom:1px solid #DDDDDD;
 	border-radius: 10px;
 	height:100px;
 }

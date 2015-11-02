@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-12 23:58:52
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-10-27 01:07:29
+* @Last Modified time: 2015-11-03 02:50:33
 */
 
 
@@ -105,7 +105,10 @@
     height:50px;
     background-color:#0D2640;
 }
-
+#active{
+    height:50px;
+    background-color:#0D2640;
+}
 
 /*nav-right-css*/
 .navbar-right{
@@ -167,19 +170,22 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 
 /*nav-user-css*/
-.nav .open > a:hover{background-color:#000;}
-.nav .open > a:active{background-color:#000;}
-.nav .open > a:focus{background-color:#000;}
-.nav .open > a:active{background-color:#000;}
+.nav .open > a:hover{background-color:#0D2640;}
+.nav .open > a:active{background-color:#0D2640;}
+.nav .open > a:focus{background-color:#0D2640;}
+.nav .open > a:active{background-color:#0D2640;}
+.nav .open > a:link{background-color:#0D2640;}
 
 #login > a{
     color:#DBECFF;
 }
 
-#login > a:hover{background-color:#000;}
-#login > a:active{background-color:#000;}
-#login > a:focus{background-color:#000;}
-#login > a:active{background-color:#000;}
+#login > a:hover{background-color:#1F5183;}
+#login > a:focus{ background-color:#3C6186;}
+#login > a:active{background-color:#0D2640;}
+
+
+
 
 .dropdown-menu li{
     padding-left:30px;
