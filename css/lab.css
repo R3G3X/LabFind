@@ -79,8 +79,11 @@
 	margin-left:28px;
 }
 .carosusel-avatar{
+	height: 80px;
+	width:80px;
 	border:2px solid #000000;
 	margin-top:0px;
+	margin-left: 35px;
 }
 
 #project-name{
@@ -124,6 +127,7 @@
 	height:100px;
 	width:100px;
 	float:left;
+	margin-left: 10px;
 }
 .teacher-comment
 {
@@ -132,4 +136,57 @@
     text-shadow:#595353 1px 1px 1px;
     margin: 10px auto;
     text-align: center;
+}
+
+.head
+{
+	height:80px;
+	width:80px;
+}
+
+.message-box
+{
+	width:100%;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	height:100%;
+}
+
+.titlebox
+{
+	border-bottom:2px solid #DDDDDD;
+	padding-left: 10px;
+
+}
+
+.box-inside
+{
+	float:left;
+	list-style:none;
+	width:48%;
+    border-right: 1px solid #DDDDDD;
+}
+
+.box-right
+{
+	float:left;
+	list-style:none;
+	width:48%;
+	border-right: none;
+	margin-left:20px;
+}
+
+.box-row
+{
+	width:100%;
+	border-bottom:1px solid #DDDDDD; 
+	border-radius: 10px;
+	height:100px;
+}
+
+.message-word
+{
+	float:right;
+	padding-right: 20px;
+
 }
