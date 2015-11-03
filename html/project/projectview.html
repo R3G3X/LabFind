@@ -28,7 +28,7 @@
         </a>
     </div>
 
-    <!-- MODAL-LOGIN -->
+    <!-- MODAL-AREGISTER -->
     <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -38,14 +38,11 @@
                 </div>
                 <div class="modal-body">
                     <form id="box-projectadd">
-                        <div class="add-left"><span id="check-status"></span>
+                        <div class="add-left">
                             <div>
                                 用户名：
                             </div>
                             <input type="text" id="username">
-                            <div>
-                                <span id="user-check"></span>
-                            </div>
                         </div>
 
                         <div class="add-left">
@@ -53,15 +50,12 @@
                                 密码：
                             </div>
                             <input type="text" id="password">
-                            <div>
-                                <span id="pass-check"></span>
-                            </div>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <a href="../../register.html">注册</a>
-                    <button type="button" class="btn btn-primary" id="user-login">登陆</button>
+                    <a type="button" class="btn btn-primary" href="../../register">登录</a>
                 </div>
             </div>
         </div>
@@ -120,8 +114,8 @@
 
             <!-- LEFT-NAV -->
             <ul class="nav navbar-nav navbar">
-                <li><a class="top" href="../project/projectlist.html">所有项目</a></li>
-                <li><a class="top" href="../lab/lablist.html">实验室</a></li>
+                <li><a class="top" href="../..//html/project/projectlist.html">所有项目</a></li>
+                <li><a class="top" href="../..//html/project/projectview.html">实验室</a></li>
             </ul>
 
             <!-- RIGHT-NAV -->
@@ -187,20 +181,20 @@
             <div class="container">
                 <div class="row" style="padding-top:40px">
                     <div class="col-md-8 colunm">
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><h4>人员需求</h4></h3>
+                        <div class="message-box">
+                            <div class="titlebox">
+                                <h3>人员需求</h3>
                             </div>
-                            <div class="panel-body" id="comment-box">
+                            <div class="message-word">
                                 <p>这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字这是一段测试文字</p>
                             </div>
                         </div>
 
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><h4>联系方式</h4></h3>
+                        <div class="message-box" style="margin-top:30px;">
+                            <div class="titlebox">
+                                <h3>联系方式</h3>
                             </div>
-                            <div class="panel-body">
+                            <div class="message-word">
                                 <div style="margin-left:30px;margin-top:10px;font-size:16px">
                                     <div style="float:right;margin-right:40px">
                                         <img src="../../img/avater.png" class="img-circle" style="margin-top:15px;border:2px solid #000000">
@@ -224,12 +218,11 @@
                         <div style="padding-bottom:20px;">
                             <img style="width:358px;border-radius:10px;" src="../../img/background-img1.jpg" />
                         </div>
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><h4>参与人员</h4></h3>
+                        <div class="message-box">
+                            <div class="titlebox">
+                                <h3>参与人员</h3>
                             </div>
-                            <div class="panel-body">
-                                <div id="myCarousel" class="carousel slide" style="text-align:center">
+                                <div id="myCarousel" class="carousel slide" style="text-align:center;margin:20px;">
                                     <!-- 轮播（Carousel）项目 -->
                                     <div class="carousel-inner">
                                         <div class="item active" style="margin-top:10px">
@@ -300,7 +293,6 @@
                                     </a>
 
                                 </div>
-                            </div>
                         </div>
 
 
