@@ -211,3 +211,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .contact-left{border-right:1px solid #DBECFF;}
 .contact-right{border-left:1px solid #DBECFF;}
+
+.titlebox
+{
+	border-bottom:2px solid #DDDDDD;
+	padding-left: 10px;
+
+}
