@@ -220,12 +220,12 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .message-box
 {
-    margin-left:50px;
+    /*margin-left:50px;*/
     padding-right:0px;
 	border: 1px solid #DDDDDD;
 	border-radius: 10px;
 	height:100%;
-    width:90%;
+    /*width:90%;*/
 }
 
 #project-do > div{
@@ -235,4 +235,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 #project-do{
     text-align:center;
+}
+
+#content{
+	padding-top:50px;
 }
