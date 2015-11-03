@@ -148,3 +148,25 @@ h6{
 	height:170px;
 	margin-left:0.5em;
 }
+
+.message-box
+{
+	width:100%;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	height:100%;
+}
+
+.titlebox
+{
+	border-bottom:2px solid #DDDDDD;
+	padding-left: 10px;
+
+}
+
+.message-word
+{
+	font-size:18px;
+	margin:10px;
+
+}
