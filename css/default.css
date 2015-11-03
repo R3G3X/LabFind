@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-12 23:58:52
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-03 13:59:19
+* @Last Modified time: 2015-11-03 16:27:54
 */
 
 
@@ -225,6 +225,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	border: 1px solid #DDDDDD;
 	border-radius: 10px;
 	height:100%;
+    margin-bottom:30px;
     /*width:90%;*/
 }
 

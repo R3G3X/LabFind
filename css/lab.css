@@ -81,7 +81,6 @@
 .carosusel-avatar{
 	height: 80px;
 	width:80px;
-	border:2px solid #000000;
 	margin-top:0px;
 	margin-left: 35px;
 }
@@ -115,8 +114,8 @@
 
 .teacher-box
 {
-/*	border-bottom: 2px solid #B3B2B2;*/
-	height: 120px;
+	border-bottom: 1px solid #DDDDDD;
+	height: 90px;
 	width:100%;
 }
 
@@ -124,10 +123,10 @@
 {
 	border: 1px solid #DDDDDD;
 	border-radius: 50px;
-	height:100px;
-	width:100px;
-	float:left;
+	height:60px;
+	width:60px;
 	margin-left: 10px;
+	margin-top:15px;
 }
 .teacher-comment
 {
@@ -135,7 +134,6 @@
 	color:#000000;
 /*    text-shadow:#595353 1px 1px 1px;*/
     margin: 10px auto;
-    text-align: center;
 }
 
 .head
@@ -173,5 +171,6 @@
 
 .message-word
 {
+	padding-top:20px;
 	float:right;
 }
