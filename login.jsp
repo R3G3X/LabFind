@@ -23,17 +23,23 @@
 		//创建一个SQL声明
 		stmt = con.createStatement();
 		rs = stmt
+		.executeQuery("select username from Regex_db.userbase where username = \'"
+				+ username
+				+ "\'");
+		if(rs.next()){
+			rs = stmt
 				.executeQuery("select username from Regex_db.userbase where username = \'"
 						+ username
 						+ "\' and password =\'"
 						+ password
 						+ "\'");
-		if (rs.next()) {
-			//response.setStatus(200);//success
-			out.println("登录！");
-		} else {
-			out.println("登录失败！请检查用户名和密码是否正确");
-			//response.setStatus(400);//failed
+			if (rs.next()) {
+				response.setStatus(200);//success
+			} else {
+				response.setStatus(400);//password error
+			}						
+		}else{
+			response.setStatus(401);//username not exist
 		}
 	} catch (Exception e) {
 		out.println(e.getMessage());
