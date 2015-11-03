@@ -17,7 +17,7 @@ $(document).ready(function(){
     })
 
 // LOGIN-CHECK
-    $("#username").blur(function(){
+    $("#username").on('input',function(){
         if($("#username").val().length==0){
             $("#user-check").html("<font color='red'>用户名不能为空</font>");
             $("#user-login").attr("disabled",true);
@@ -29,7 +29,7 @@ $(document).ready(function(){
             }
         }
     })
-    $("#password").blur(function(){
+    $("#password").on('input',function(){
         if($("#password").val().length==0){
             $("#pass-check").html("<font color='red'>密码不能为空</font>");
             $("#user-login").attr("disabled",true);
