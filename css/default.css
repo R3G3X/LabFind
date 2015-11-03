@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-12 23:58:52
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-03 02:50:33
+* @Last Modified time: 2015-11-03 13:59:19
 */
 
 
@@ -214,14 +214,25 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .titlebox
 {
-	border-bottom:2px solid #DDDDDD;
+	border-bottom:1px solid #DDDDDD;
 	padding-left: 10px;
 
 }
 .message-box
 {
-	width:100%;
+    margin-left:50px;
+    padding-right:0px;
 	border: 1px solid #DDDDDD;
 	border-radius: 10px;
 	height:100%;
+    width:90%;
+}
+
+#project-do > div{
+    padding-top:0.5em;
+    height:4em;
+}
+
+#project-do{
+    text-align:center;
 }
