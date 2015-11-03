@@ -79,17 +79,16 @@ CREATE TABLE `projectbase` (
   `projectname` varchar(45) NOT NULL,
   `createtime` datetime DEFAULT NULL,
   `fintime` datetime DEFAULT NULL,
-  `founder` varchar(45) NOT NULL,
-  `founderid` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
   `labid` int(11) DEFAULT NULL,
   `projectintro` varchar(100) DEFAULT NULL,
   `requirenum` int(11) DEFAULT NULL,
   `technique` varchar(45) DEFAULT NULL,
   `image` varchar(100) DEFAULT NULL,
-  `memberid` varchar(45) DEFAULT NULL,
+  `member` varchar(45) DEFAULT NULL,
   `projectstatus` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,7 +97,6 @@ CREATE TABLE `projectbase` (
 
 LOCK TABLES `projectbase` WRITE;
 /*!40000 ALTER TABLE `projectbase` DISABLE KEYS */;
-INSERT INTO `projectbase` VALUES (1,'pro1',NULL,NULL,'f1',1,NULL,NULL,NULL,NULL,NULL,NULL,1),(2,'pro2',NULL,NULL,'f2',2,NULL,NULL,NULL,NULL,NULL,'3,1',1),(3,'pro3',NULL,NULL,'f4',4,NULL,NULL,NULL,NULL,NULL,'5',1),(4,'pro4',NULL,NULL,'f5',5,NULL,NULL,NULL,NULL,NULL,'1',2);
 /*!40000 ALTER TABLE `projectbase` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -157,7 +155,7 @@ CREATE TABLE `userbase` (
 
 LOCK TABLES `userbase` WRITE;
 /*!40000 ALTER TABLE `userbase` DISABLE KEYS */;
-INSERT INTO `userbase` VALUES (1,'MsJiang','12345678','蒋悦紫晗','17000000000','我很2','img/MsJiang.png','0','598868984@qq.com','软件工程','卖萌',NULL);
+INSERT INTO `userbase` VALUES (1,'MsJiang','12345678','蒋悦紫晗','17000000000','我很2','img/person.png','0','598868984@qq.com','软件工程','卖萌',NULL);
 /*!40000 ALTER TABLE `userbase` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -170,4 +168,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-03 16:59:21
+-- Dump completed on 2015-11-03 12:41:06

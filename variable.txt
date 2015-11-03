@@ -54,14 +54,13 @@
 		项目名称		projectname
 		创建时间		createtime
 		完成时间		fintime
-		创建人			founder
-		创建人id		founderid
+		创建人			userid
 		所属实验室		labid
 		简介			projectintro
 		需要的人数		requirenum
 		技术			technique
 		项目图片		image
-		成员			memberid			([id1,id2,id3])
+		成员			member				([id1,id2,id3])
 		项目状态		projectstatus			(0:pending 1:inprogess 2:finished)默认0
 	}
 	实验{
