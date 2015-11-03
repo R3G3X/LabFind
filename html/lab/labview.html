@@ -1,448 +1,448 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- meta -->
-    <title>LAB FIND</title>
-    <!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
-    <!-- BOOTSTRAP#01 -->
-    <script src="../../js/jquery/2.0.0/jquery.min.js"></script>
-    <script src="../../js/3.0.3/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../js/jquery/jquery-latest.js"></script>
-    <script type="text/javascript" src="../../js/default.js"></script>
-    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../../css/default.css" rel="stylesheet" />
-    <!-- END OF BOOTSTRAP#01 -->
-    <link href="../../css/lab.css" rel="stylesheet" />
-    <link href="../../css/personal.css" rel="stylesheet"/>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- meta -->
+	<title>LAB FIND</title>
+	<!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
+	<!-- BOOTSTRAP#01 -->
+	<script src="../../js/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../../js/3.0.3/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery/jquery-latest.js"></script>
+	<script type="text/javascript" src="../../js/default.js"></script>
+	<link href="../../css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../../css/default.css" rel="stylesheet" />
+	<!-- END OF BOOTSTRAP#01 -->
+	<link href="../../css/lab.css" rel="stylesheet" />
+	<link href="../../css/personal.css" rel="stylesheet"/>
 </head>
 <body>
 
-    <!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
-    <!-- NAVAIGATION#02 -->
-    <!-- ADD-PROJECT -->
-    <div id="project-add">
-        <a href="#" type="button" data-toggle="modal" data-target="#modalAdd">
-            <span id="btn-add" class="glyphicon glyphicon-plus" style="font-size:40px; color:#fff"></span>
-        </a>
-    </div>
+	<!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
+	<!-- NAVAIGATION#02 -->
+	<!-- ADD-PROJECT -->
+	<div id="project-add">
+		<a href="#" type="button" data-toggle="modal" data-target="#modalAdd">
+			<span id="btn-add" class="glyphicon glyphicon-plus" style="font-size:40px; color:#fff"></span>
+		</a>
+	</div>
 
-    <!-- MODAL-LOGIN -->
-    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">登陆</h4>
-                </div>
-                <div class="modal-body">
-                    <form id="box-projectadd">
-                        <div class="add-left"><span id="check-status"></span>
-                            <div>
-                                用户名：
-                            </div>
-                            <input type="text" id="username">
-                            <div>
-                                <span id="user-check"></span>
-                            </div>
-                        </div>
-
-                        <div class="add-left">
-                            <div class="project-adding">
-                                密码：
-                            </div>
-                            <input type="text" id="password">
-                            <div>
-                                <span id="pass-check"></span>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <a href="../../register.html">注册</a>
-                    <button type="button" class="btn btn-primary" id="user-login">登陆</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL-ADD -->
-    <div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">创建项目</h4>
-                </div>
-                <div class="modal-body">
-                    <form id="box-projectadd">
-                        <div class="add-right">
-                            <div>
-                                项目简介：
-                            </div>
-                            <textarea id="brief"></textarea>
-                        </div>
-                        <div class="add-left">
-                            <div>
-                                项目名称：
-                            </div>
-                            <input type="text" name="project-name">
-                        </div>
-
-                        <div class="add-left">
-                            <div class="project-adding">
-                                创建人：
-                            </div>
-                            <input type="text" name="founder-name">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" id="change-save">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="navbar navbar-fixed-top navigation" role="navigation">
-        <div class="container">
-
-            <!-- LOGO -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../../index.html">REG|EX</a>
-            </div>
-
-            <!-- LEFT-NAV -->
-            <ul class="nav navbar-nav navbar">
-                <li><a class="top" href="../project/projectlist.html">所有项目</a></li>
-                <li><a class="top" href="../lab/lablist.html">实验室</a></li>
-            </ul>
-
-            <!-- RIGHT-NAV -->
-            <div>
-                <ul class="nav navbar-nav navbar-right">
-
-                    <!-- SEARCH -->
-                    <li>
-                        <form class="navbar-form navbar-left" role="search">
-                            <div id="search-box">
-                                <input type="text" name="query" required="true" placeholder="Search" height />
-                            </div>
-                        </form>
-                    </li>
-
-                    <!-- USER-INT -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle top" data-toggle="dropdown">鸡汁汇<strong class="caret"></strong></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../../html/person-view/personal-view.html">我的主页</a></li>
-                            <li class="divider"></li>
-                            <li><span class="badge">2015-10-16</span></li>
-                            <li><h>c#项目</h></li>
-                            <li><span class="badge">2015-10-30</span></li>
-                            <li><h>竞赛项目</h></li>
-                            <li><span class="badge">2015-10-30</span></li>
-                            <li><h>实验室项目</h></li>
-                            <li class="divider"></li>
-                            <li><a href="#" id="exit">退出登录</a></li>
-                        </ul>
-                    </li>
-
-                    <li id="login" class="hidden">
-                        <a href="#" type="button" data-toggle="modal" data-target="#modalRegister">登陆</a>
-                    </li>
-
-                    <!-- AVATAR -->
-                    <li style="margin-left:5px" id="user-pic"><img src="../../img/avater.png" class="img-circle"></li>
-                </ul>
-            </div>
-
-
-        </div>
-    </div>
-    <!-- END OF NAVAIGATION#02 -->
-
-    <div id="content">
-        <!-- INSERT YOUR CODE HERE#00-->
-        <div style="padding-top:57px">
-            <div class="row clearfix">
-
-                <div style="background:url(../../img/background-img.jpg) no-repeat fixed center center / cover;border-bottom: 5px solid #3C6186;margin-top:-30px;padding-bottom:0px;box-shadow:#000 1px 1px 5px">
-
-                    <div class="jumbotrona masthead" style="padding-top:20px;padding-bottom:10px;box-shadow:#000 3px 3px 5px inset;">
-                        <div class="container" style="text-align:center">
-                            <h2 id="project-name">实验室名称</h2>
-                            <h3 id="project-comment">实验室简介</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row" style="padding-top:40px">
-                <div class="col-md-8">
-                    <div class="panel panel-success">
-					<div class="panel-heading">
-						<h2 class="second-tittle">
-							<strong>最新动态</strong>
-						</h2>
-					</div>
-					<div class="panel-body">
-
-						<!--#1-->
-						<div class="row">
-
-							<div class="col-md-3">
-								<img src="../../img/smile.jpg" class="img-circle big-avatar" />
+	<!-- MODAL-LOGIN -->
+	<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">登陆</h4>
+				</div>
+				<div class="modal-body">
+					<form id="box-projectadd">
+						<div class="add-left"><span id="check-status"></span>
+							<div>
+								用户名：
 							</div>
-							<div class="col-md-9">
-								<h4 class="project-finished">XXX发布了一个项目</h4>
-								<p style="text-align:right"><strong>2015年10月9日</strong></p>
+							<input type="text" id="username">
+							<div>
+								<span id="user-check"></span>
 							</div>
 						</div>
-						<hr />
-						<!--#2-->
-						<div class="row">
-							<div class="col-md-3">
-								<img src="../../img/smile.jpg" class="img-circle big-avatar" />
+
+						<div class="add-left">
+							<div class="project-adding">
+								密码：
 							</div>
-							<div class="col-md-9">
-								<h4 class="project-finished">XXX发布了一个项目</h4>
-								<hr />
-								<p style="text-align:right"><strong>2015年10月5日</strong></p>
+							<input type="text" id="password">
+							<div>
+								<span id="pass-check"></span>
 							</div>
 						</div>
-					</div>
+					</form>
 				</div>
-			</div>
-			<div class="col-md-4">
-				<div style="padding-bottom:20px;">
-                    <img style="width:358px;border-radius:10px;" src="../../img/background-img1.jpg" />
-                </div>
-				<h3>项目信息<span style="float:right"><small><a href="edit.html">编辑</a></small></span></h3>
-				<div class="row" id="project-do">
-					<div class="col-md-6" style="border-right:1px solid #D9D9D9">
-						<strong class="right-count"><a href="added.html">12</a></strong>
-						<br />
-						<strong class="left-stext">正在做的项目</strong>
-					</div>
-					<div class="col-md-6">
-						<strong class="right-count"><a href="finished.html">23</a></strong>
-						<br />
-						<strong class="left-stext">完成的项目</strong>
-					</div>
+				<div class="modal-footer">
+					<a href="../../register.html">注册</a>
+					<button type="button" class="btn btn-primary" id="user-login">登陆</button>
 				</div>
-
 			</div>
 		</div>
-    </div>
+	</div>
+
+	<!-- MODAL-ADD -->
+	<div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">创建项目</h4>
+				</div>
+				<div class="modal-body">
+					<form id="box-projectadd">
+						<div class="add-right">
+							<div>
+								项目简介：
+							</div>
+							<textarea id="brief"></textarea>
+						</div>
+						<div class="add-left">
+							<div>
+								项目名称：
+							</div>
+							<input type="text" name="project-name">
+						</div>
+
+						<div class="add-left">
+							<div class="project-adding">
+								创建人：
+							</div>
+							<input type="text" name="founder-name">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" id="change-save">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navbar navbar-fixed-top navigation" role="navigation">
+		<div class="container">
+
+			<!-- LOGO -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="../../index.html">REG|EX</a>
+			</div>
+
+			<!-- LEFT-NAV -->
+			<ul class="nav navbar-nav navbar">
+				<li><a class="top" href="../project/projectlist.html">所有项目</a></li>
+				<li><a class="top" href="../lab/lablist.html">实验室</a></li>
+			</ul>
+
+			<!-- RIGHT-NAV -->
+			<div>
+				<ul class="nav navbar-nav navbar-right">
+
+					<!-- SEARCH -->
+					<li>
+						<form class="navbar-form navbar-left" role="search">
+							<div id="search-box">
+								<input type="text" name="query" required="true" placeholder="Search" height />
+							</div>
+						</form>
+					</li>
+
+					<!-- USER-INT -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle top" data-toggle="dropdown">鸡汁汇<strong class="caret"></strong></a>
+						<ul class="dropdown-menu">
+							<li><a href="../../html/person-view/personal-view.html">我的主页</a></li>
+							<li class="divider"></li>
+							<li><span class="badge">2015-10-16</span></li>
+							<li><h>c#项目</h></li>
+							<li><span class="badge">2015-10-30</span></li>
+							<li><h>竞赛项目</h></li>
+							<li><span class="badge">2015-10-30</span></li>
+							<li><h>实验室项目</h></li>
+							<li class="divider"></li>
+							<li><a href="#" id="exit">退出登录</a></li>
+						</ul>
+					</li>
+
+					<li id="login" class="hidden">
+						<a href="#" type="button" data-toggle="modal" data-target="#modalRegister">登陆</a>
+					</li>
+
+					<!-- AVATAR -->
+					<li style="margin-left:5px" id="user-pic"><img src="../../img/avater.png" class="img-circle"></li>
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+	<!-- END OF NAVAIGATION#02 -->
+
+	<div id="content">
+		<!-- INSERT YOUR CODE HERE#00-->
+		<div style="padding-top:57px">
+			<div class="row clearfix">
+
+				<div style="background:url(../../img/background-img.jpg) no-repeat fixed center center / cover;border-bottom: 5px solid #3C6186;margin-top:-30px;padding-bottom:0px;box-shadow:#000 1px 1px 5px">
+
+					<div class="jumbotrona masthead" style="padding-top:20px;padding-bottom:10px;box-shadow:#000 3px 3px 5px inset;">
+						<div class="container" style="text-align:center">
+							<h2 id="project-name">实验室名称</h2>
+							<h3 id="project-comment">实验室简介</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row" style="padding-top:40px">
+					<div class="col-md-8">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h2 class="second-tittle">
+									<strong>最新动态</strong>
+								</h2>
+							</div>
+							<div class="panel-body">
+
+								<!--#1-->
+								<div class="row">
+
+									<div class="col-md-3">
+										<img src="../../img/smile.jpg" class="img-circle big-avatar" />
+									</div>
+									<div class="col-md-9">
+										<h4 class="project-finished">XXX发布了一个项目</h4>
+										<p style="text-align:right"><strong>2015年10月9日</strong></p>
+									</div>
+								</div>
+								<hr />
+								<!--#2-->
+								<div class="row">
+									<div class="col-md-3">
+										<img src="../../img/smile.jpg" class="img-circle big-avatar" />
+									</div>
+									<div class="col-md-9">
+										<h4 class="project-finished">XXX发布了一个项目</h4>
+										<hr />
+										<p style="text-align:right"><strong>2015年10月5日</strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div style="padding-bottom:20px;">
+							<img style="width:358px;border-radius:10px;" src="../../img/background-img1.jpg" />
+						</div>
+						<h3>项目信息<span style="float:right"><small><a href="edit.html">编辑</a></small></span></h3>
+						<div class="row" id="project-do">
+							<div class="col-md-6" style="border-right:1px solid #D9D9D9">
+								<strong class="right-count"><a href="added.html">12</a></strong>
+								<br />
+								<strong class="left-stext">正在做的项目</strong>
+							</div>
+							<div class="col-md-6">
+								<strong class="right-count"><a href="finished.html">23</a></strong>
+								<br />
+								<strong class="left-stext">完成的项目</strong>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
 
 				<div class="row">
-                    <div class="col-md-8 colunm">
-                        <div class="panel panel-success">
-                           	<div class="panel-heading">
-                                <h3 class="panel-title"><h4>指导老师</h4></h3>
-                            </div>
-                        	<div class="panel-body">
-                        		<div class="teacher-box">
-                        			<img src="../../img/smile.jpg" class="teacher-head">
-                        			<div class="teacher-comment">
-                        				老师姓名
-                        			</div>
-                        			<div class="teacher-comment">
-                        				老师职称
-                        			</div>
-                        			<div class="teacher-comment">
-                        				研究方向
-                        			</div>
-                        		</div>
-                        		<div class="teacher-box">
-                        			<img src="../../img/smile.jpg" class="teacher-head">
-                        			<div class="teacher-comment">
-                        				老师姓名
-                        			</div>
-                        			<div class="teacher-comment">
-                        				老师职称
-                        			</div>
-                        			<div class="teacher-comment">
-                        				研究方向
-                        			</div>
-                        		</div>
-                        		<div class="teacher-box">
-                        			<img src="../../img/smile.jpg" class="teacher-head">
-                        			<div class="teacher-comment">
-                        				老师姓名
-                        			</div>
-                        			<div class="teacher-comment">
-                        				老师职称
-                        			</div>
-                        			<div class="teacher-comment">
-                        				研究方向
-                        			</div>
-                        		</div>
-                        	</div>
-                        </div>
+					<div class="col-md-8 colunm">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h3 class="panel-title"><h4>指导老师</h4></h3>
+							</div>
+							<div class="panel-body">
+								<div class="teacher-box">
+									<img src="../../img/smile.jpg" class="teacher-head">
+									<div class="teacher-comment">
+										老师姓名
+									</div>
+									<div class="teacher-comment">
+										老师职称
+									</div>
+									<div class="teacher-comment">
+										研究方向
+									</div>
+								</div>
+								<div class="teacher-box">
+									<img src="../../img/smile.jpg" class="teacher-head">
+									<div class="teacher-comment">
+										老师姓名
+									</div>
+									<div class="teacher-comment">
+										老师职称
+									</div>
+									<div class="teacher-comment">
+										研究方向
+									</div>
+								</div>
+								<div class="teacher-box">
+									<img src="../../img/smile.jpg" class="teacher-head">
+									<div class="teacher-comment">
+										老师姓名
+									</div>
+									<div class="teacher-comment">
+										老师职称
+									</div>
+									<div class="teacher-comment">
+										研究方向
+									</div>
+								</div>
+							</div>
+						</div>
 
-                    </div>
-                    <div class="col-md-4 colume">
-                    	 <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><h4>实验室成员</h4></h3>
-                            </div>
-                            <div class="panel-body">
-                                <div id="myCarousel" class="carousel slide" style="text-align:center">
-                                    <!-- 轮播（Carousel）项目 -->
-                                    <div class="carousel-inner">
-                                        <div class="item active" style="margin-top:10px">
-                                            <ul>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle carosusel-avatar">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机制汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle carosusel-avatar">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机制汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle carosusel-avatar">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机制汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle carosusel-avatar">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机制汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle carosusel-avatar">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机制汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle carosusel-avatar">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机制汇</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="item" style="margin-top:10px;">
-                                            <ul>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机智汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机智汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机智汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机智汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机智汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">机智汇</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="item" style="margin-top:10px;">
-                                            <ul>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">鸡汁汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">鸡汁汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">鸡汁汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">鸡汁汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">鸡汁汇</a>
-                                                </li>
-                                                <li class="man">
-                                                    <img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
-                                                    <br />
-                                                    <a href="#" style="font-size:16px;">鸡汁汇</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- 轮播（Carousel）导航 -->
+					</div>
+					<div class="col-md-4 colume">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<h3 class="panel-title"><h4>实验室成员</h4></h3>
+							</div>
+							<div class="panel-body">
+								<div id="myCarousel" class="carousel slide" style="text-align:center">
+									<!-- 轮播（Carousel）项目 -->
+									<div class="carousel-inner">
+										<div class="item active" style="margin-top:10px">
+											<ul>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle carosusel-avatar">
+													<br />
+													<a href="#" style="font-size:16px;">机制汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle carosusel-avatar">
+													<br />
+													<a href="#" style="font-size:16px;">机制汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle carosusel-avatar">
+													<br />
+													<a href="#" style="font-size:16px;">机制汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle carosusel-avatar">
+													<br />
+													<a href="#" style="font-size:16px;">机制汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle carosusel-avatar">
+													<br />
+													<a href="#" style="font-size:16px;">机制汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle carosusel-avatar">
+													<br />
+													<a href="#" style="font-size:16px;">机制汇</a>
+												</li>
+											</ul>
+										</div>
+										<div class="item" style="margin-top:10px;">
+											<ul>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">机智汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">机智汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">机智汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">机智汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">机智汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">机智汇</a>
+												</li>
+											</ul>
+										</div>
+										<div class="item" style="margin-top:10px;">
+											<ul>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">鸡汁汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">鸡汁汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">鸡汁汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">鸡汁汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">鸡汁汇</a>
+												</li>
+												<li class="man">
+													<img src="../../img/avater.png" class="img-circle" style="border:2px solid #000000">
+													<br />
+													<a href="#" style="font-size:16px;">鸡汁汇</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- 轮播（Carousel）导航 -->
 
-                                    <a class="c-control" href="#myCarousel" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-                                    <a class="c-control right " href="#myCarousel" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
+									<a class="c-control" href="#myCarousel" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</a>
+									<a class="c-control right " href="#myCarousel" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</a>
 
-                                </div>
-                            </div>
-                        </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END OF YOUR CODE#00 -->
+	</div>
 
-                    </div>
-                </div>
-            </div>
-            <!-- END OF YOUR CODE#00 -->
-        </div>
 
-
-    <!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
-    <!-- BOTTOM#03 -->
-    <div class="col-md-12 column text-center">
-        <p><br>REGEX Team. (153-006-81187)<br />中山北路 3663 号 华东师范大学<br /></p>
-    </div>
-    <div class="contact">
-        <div class="container">
-            <ul>
-                <li class="contact-left">
-                    REGEX技术交流群：
-                    <span>484366879</span>
-                </li>
-                <li>
-                    Bootstrap问答社区
-                </li>
-                <li class="contact-right">
-                    新浪微博：@REGEX
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- END OF BOTTOM#03 -->
+	<!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
+	<!-- BOTTOM#03 -->
+	<div class="col-md-12 column text-center">
+		<p><br>REGEX Team. (153-006-81187)<br />中山北路 3663 号 华东师范大学<br /></p>
+	</div>
+	<div class="contact">
+		<div class="container">
+			<ul>
+				<li class="contact-left">
+					REGEX技术交流群：
+					<span>484366879</span>
+				</li>
+				<li>
+					Bootstrap问答社区
+				</li>
+				<li class="contact-right">
+					新浪微博：@REGEX
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- END OF BOTTOM#03 -->
 </body>
 </html>
