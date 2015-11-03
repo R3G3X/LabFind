@@ -218,3 +218,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	padding-left: 10px;
 
 }
+.message-box
+{
+	width:100%;
+	border: 1px solid #DDDDDD;
+	border-radius: 10px;
+	height:100%;
+}
