@@ -5,7 +5,7 @@
 	<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-		String username="hhui";
+		String username="admin";
 		Connection con;
 		Statement stmt;
 		ResultSet rs;
@@ -32,6 +32,7 @@
 			userIntro=rs.getString("userintro");
 			technique=rs.getString("technique");
 		}
+		avatar_loc="../../img/"+avatar_loc;
 		//project num
 		rs = stmt
 				.executeQuery("select count(1) from(select projectbase.id,projectbase.projectname from Regex_db.projectbase where (founderid = \'"
@@ -207,7 +208,7 @@
 				</li>
 
 				<!-- AVATAR -->
-				<li style="margin-left:5px" id="user-pic"><img src="../../img/avater.png" class="img-circle"></li>
+				<li style="margin-left:5px" id="user-pic"><img src="<%=avatar_loc%>" class="img-circle"></li>
 			</ul>
 		</div>
 	</div>
@@ -221,14 +222,7 @@
 
 		<div class="jumbotrona masthead" style="padding-top:20px;padding-bottom:10px;box-shadow:#000 3px 3px 5px inset;">
 			<div class="container" style="text-align:center"  id="user-box">
-				<img src="javaScript:AvatarLoad()" class="img-circle big-avatar" />
-					<script language="javascript">
-						function AvatarLoad(){
-						var tmpavatar=document.getElementById("useravatar");
-						var loc="<%=avatar_loc%>";
-						tmpavatar.src="../../img/"+loc;
-						}
-					</script>
+				<img src="<%=avatar_loc%>" class="img-circle big-avatar" />
 				<h2 id="user"><%=realname%></h2>
 				<h3 id="comment"><%=userIntro%></h3>
 				<a class="btn btn-lg btn-success" href="../project/projectview.html" role="button">管理项目</a>
