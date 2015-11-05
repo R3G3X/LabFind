@@ -2,12 +2,13 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-06 02:51:04
+* @Last Modified time: 2015-11-06 02:57:07
 */
 
 $(document).ready(function(){
     loginId();
-    if (userid!=""){
+    var username=$.cookie("userid");
+    if (username != null && username != ""){
         $("#login").addClass("hidden");
         $(".dropdown").removeClass("hidden");
         $("#user-pic").removeClass("hidden");
@@ -103,7 +104,7 @@ $(document).ready(function(){
             $(".dropdown").addClass("hidden");
             $("#user-pic").addClass("hidden");
             $("#login").removeClass("hidden");
-            $.cookie("userid","",{path"/"});
+            $.cookie("userid","",{path:"/"});
             location.reload();
     })
 })
