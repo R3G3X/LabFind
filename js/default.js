@@ -2,10 +2,19 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-06 02:20:15
+* @Last Modified time: 2015-11-06 02:25:09
 */
 
 $(document).ready(function(){
+
+    var username=$.cookie("userid");
+    if (usernam!=0){
+        $("#login").addClass("hidden");
+        $(".dropdown").removeClass("hidden");
+        $("#user-pic").removeClass("hidden");
+    }
+
+
     $("#user-login").attr("disabled",true);
     $("#project-add > a").click(function(){
             // alert(" ");
@@ -96,6 +105,4 @@ $(document).ready(function(){
             $("#login").removeClass("hidden");
             $.cookie("userid","");
     })
-
-    $
 })
