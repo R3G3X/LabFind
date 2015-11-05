@@ -51,6 +51,8 @@ $(document).ready(function(){
                     alert("成功登陆");
                     $("#check-status").html("");
                     $("#login").addClass("hidden");
+                    $(".dropdown").removeClass("hidden");
+                    $("#user-pic").removeClass("hidden");
                     $.cookie("userid",$("#username").val(),{expire:7,path:"/"});
                     $("#password").val("");
                     $("#username").val("");
@@ -72,7 +74,7 @@ $(document).ready(function(){
     }
 
 
-    $("#change-save").click(function(){
+    /*$("#change-save").click(function(){
 
                 function(data){
                     if (data==1){
@@ -85,7 +87,7 @@ $(document).ready(function(){
                         alert("0");
                     }
                 })
-    })
+    })*/
 
     $("#exit").click(function(){
             // alert(" ");
