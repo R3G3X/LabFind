@@ -2,13 +2,13 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-06 02:25:09
+* @Last Modified time: 2015-11-06 02:32:24
 */
 
 $(document).ready(function(){
 
     var username=$.cookie("userid");
-    if (usernam!=0){
+    if (username!=0){
         $("#login").addClass("hidden");
         $(".dropdown").removeClass("hidden");
         $("#user-pic").removeClass("hidden");
@@ -66,6 +66,7 @@ $(document).ready(function(){
                     $("#password").val("");
                     $("#username").val("");
                     loginId();
+                    window.location.href="index.jsp";
                 })
         .error(function(data,status,e){
             alert("用户名或密码错误！");
@@ -104,5 +105,6 @@ $(document).ready(function(){
             $("#user-pic").addClass("hidden");
             $("#login").removeClass("hidden");
             $.cookie("userid","");
+            window.location.href="index.jsp";
     })
 })
