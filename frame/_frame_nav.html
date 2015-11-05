@@ -1,5 +1,6 @@
     <!-- NAVAIGATION#02 -->
-    <!-- MODAL-AREGISTER -->
+
+    <!-- MODAL-LOGIN -->
     <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -22,7 +23,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- ADD-PROJECT -->
     <div id="project-add">
@@ -101,7 +101,7 @@
 
                     <!-- USER-INT -->
                     <li class="dropdown hidden">
-                        <a href="#" class="dropdown-toggle top" data-toggle="dropdown">鸡汁汇<strong class="caret"></strong></a>
+                        <a href="#" class="dropdown-toggle top" data-toggle="dropdown"><%=realname%><strong class="caret"></strong></a>
                         <ul class="dropdown-menu">
                             <li><a href="html/person-view/personal-view.jsp">我的主页</a></li>
                             <li class="divider"></li>
@@ -114,7 +114,7 @@
                     </li>
 
                     <!-- AVATAR -->
-                    <li style="margin-left:5px" id="user-pic" class="hidden"><img src="img/avater.png" class="img-circle"></li>
+                    <li style="margin-left:5px" id="user-pic" class="hidden"><img src="<%=avatar_loc%>" class="img-circle"></li>
                 </ul>
             </div>
 

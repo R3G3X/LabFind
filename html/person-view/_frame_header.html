@@ -1,8 +1,49 @@
     <!-- BOOTSTRAP#01 -->
+    <%@page import="java.sql.*"%>
+	<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	<%
+		String avatar_loc="";
+		String realname="";
+		String username="";
+		Cookie cookie = null;
+   		Cookie[] cookies = null;
+   		boolean login=false;
+   		cookies = request.getCookies();
+   		if(cookies!=null)
+      	for (int i = 0; i < cookies.length; i++){
+         	if(cookies[i].getName().compareTo("userid")==0){
+				username=cookies[i].getValue();
+				login=true;
+				break;
+         	}
+      	}
+      	if(login){
+			Connection con;
+			Statement stmt;
+			ResultSet rs;
+			Class.forName("com.mysql.jdbc.Driver");
+			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+			String dbUrl = "jdbc:mysql://localhost:3306/Regex_DB";
+			String dbUser = "root";
+			String dbPwd = "0000";
+			con = java.sql.DriverManager.getConnection(dbUrl, dbUser, dbPwd);
+			stmt = con.createStatement();
+			rs = stmt
+					.executeQuery("select * from Regex_db.userbase where username = \'"
+							+ username + "\'");
+			while(rs.next()){
+				realname=rs.getString("realName");
+				avatar_loc=rs.getString("avatar");
+			}
+			avatar_loc="../../img/"+avatar_loc;
+		}
+		%>
 	<link href="../../css/bootstrap.min.css" rel="stylesheet" />
 	<link href="../../css/default.css" rel="stylesheet" />
 	<script src="../../js/jquery/2.0.0/jquery.min.js"></script>
 	<script src="../../js/3.0.3/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../../js/jquery/jquery-latest.js"></script>
+	<script type="text/javascript" src="../../js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../js/default.js"></script>
     <!-- END OF BOOTSTRAP#01 -->

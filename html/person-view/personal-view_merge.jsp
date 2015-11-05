@@ -80,6 +80,7 @@
 	<script src="../../js/jquery/2.0.0/jquery.min.js"></script>
 	<script src="../../js/3.0.3/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../../js/jquery/jquery-latest.js"></script>
+	<script type="text/javascript" src="../../js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../js/default.js"></script>
     <!-- END OF BOOTSTRAP#01 -->
 	<link href="../../css/personal.css" rel="stylesheet" />
@@ -88,92 +89,9 @@
 
 	<!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
 
-	<!-- ADD-PROJECT -->
-	<div id="project-add">
-		<a href="#" type="button" data-toggle="modal" data-target="#modalAdd">
-			<span id="btn-add" class="glyphicon glyphicon-plus" style="font-size:40px; color:#fff"></span>
-		</a>
-	</div>
-
-	<!-- MODAL-ADD -->
-	<div class="modal fade" id="modalAdd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content"> <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">创建项目</h4>
-			</div>
-			<div class="modal-body">
-				<form id="box-projectadd">
-					<div class="add-right">
-						<div>
-							项目简介：
-						</div>
-						<textarea id="brief"></textarea>
-					</div>
-					<div class="add-left">
-						<div>
-							项目名称：
-						</div>
-						<input type="text" name="project-name">
-					</div>
-
-					<div class="add-left">
-						<div class="project-adding">
-							创建人：
-						</div>
-						<input type="text" name="founder-name">
-					</div>
-				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary" id="change-save">Save changes</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- MODAL-LOGIN -->
-<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">登陆</h4>
-			</div>
-			<div class="modal-body">
-				<form id="box-projectadd">
-					<div class="add-left"><span id="check-status"></span>
-						<div>
-							用户名：
-						</div>
-						<input type="text" id="username">
-						<div>
-							<span id="user-check"></span>
-						</div>
-					</div>
-
-					<div class="add-left">
-						<div class="project-adding">
-							密码：
-						</div>
-						<input type="text" id="password">
-						<div>
-							<span id="pass-check"></span>
-						</div>
-					</div>
-				</form>
-			</div>
-			<div class="modal-footer">
-				<a href="../../register.html">注册</a>
-				<button type="button" class="btn btn-primary" id="user-login">登陆</button>
-			</div>
-		</div>
-	</div>
-</div>
-
     <!-- NAVAIGATION#02 -->
-    <!-- MODAL-AREGISTER -->
+
+    <!-- MODAL-LOGIN -->
     <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -196,7 +114,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- ADD-PROJECT -->
     <div id="project-add">
@@ -275,7 +192,7 @@
 
                     <!-- USER-INT -->
                     <li class="dropdown hidden">
-                        <a href="#" class="dropdown-toggle top" data-toggle="dropdown">鸡汁汇<strong class="caret"></strong></a>
+                        <a href="#" class="dropdown-toggle top" data-toggle="dropdown"><%=realname%><strong class="caret"></strong></a>
                         <ul class="dropdown-menu">
                             <li><a href="html/person-view/personal-view.jsp">我的主页</a></li>
                             <li class="divider"></li>
@@ -288,7 +205,7 @@
                     </li>
 
                     <!-- AVATAR -->
-                    <li style="margin-left:5px" id="user-pic" class="hidden"><img src="img/avater.png" class="img-circle"></li>
+                    <li style="margin-left:5px" id="user-pic" class="hidden"><img src="<%=avatar_loc%>" class="img-circle"></li>
                 </ul>
             </div>
 
