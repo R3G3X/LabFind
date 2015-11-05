@@ -10,6 +10,7 @@
    		Cookie[] cookies = null;
    		boolean login=false;
    		cookies = request.getCookies();
+   		if(cookies!=null)
       	for (int i = 0; i < cookies.length; i++){
          	if(cookies[i].getName().compareTo("userid")==0){
 				username=cookies[i].getValue();
@@ -17,9 +18,9 @@
 				break;
          	}
       	}
-      	if(!login){
+      	if(!login||username.compareTo("")==0){
    			out.print("<script>alert('未登录！')</script>");
-   			response.setStatus(403);  
+   			response.sendRedirect("../../index.html"); 
    			return;  	
       }
 		Connection con;
