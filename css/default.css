@@ -2,9 +2,67 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-12 23:58:52
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-03 16:27:54
+* @Last Modified time: 2015-11-06 02:01:04
 */
 
+
+/*login-css*/
+#modalRegister{
+    margin-left:340px;
+    margin-top:120px;
+}
+.modal-content{
+    width:260px;
+    height:280px;
+}
+#login-front{
+    width:144px;
+    height:400;
+    margin:0 auto;
+}
+#name-input{margin-top:45px;}
+#username{
+    margin:0 auto;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-top:1px solid #ddd;
+    border-bottom:0px;
+}
+#password{
+    margin:0 auto;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+#register-btn{margin-left:25px;}
+#user-login{margin-left:10px;}
+
+#username::-webkit-input-placeholder{
+　　color:#ddd;
+}
+#username:-moz-placeholder{
+　　color:#ddd;
+}
+#username::-moz-placeholder{
+　　color:#ddd;
+}
+#username:-ms-input-placeholder{
+　　color:#ddd;
+}
+
+#password::-webkit-input-placeholder{
+　　color:#ddd;
+}
+#password:-moz-placeholder{
+　　color:#ddd;
+}
+#password::-moz-placeholder{
+　　color:#ddd;
+}
+#password:-ms-input-placeholder{
+　　color:#ddd;
+}
 
 /*top-css*/
 .navigation{
@@ -155,16 +213,16 @@
     background-color:#3C6186;
     border:0px;
 }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+#search-input::-webkit-input-placeholder{
     color:#DBECFF;
 }
-input:-moz-placeholder, textarea:-moz-placeholder {
+#search-input:-moz-placeholder{
     color:#DBECFF;
 }
-input::-moz-placeholder, textarea::-moz-placeholder {
+#search-input::-moz-placeholder{
     color:#DBECFF;
 }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+#search-input:-ms-input-placeholder{
     color:#DBECFF;
 }
 
@@ -283,3 +341,4 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     box-shadow: inset 0 3px 2px rgba(0,0,0,.24);
     border-radius: 5px;
 }
+

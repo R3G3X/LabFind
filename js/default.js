@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-06 00:22:15
+* @Last Modified time: 2015-11-06 02:03:54
 */
 
 $(document).ready(function(){
@@ -18,6 +18,7 @@ $(document).ready(function(){
 
 // LOGIN-CHECK
     $("#username").on('input',function(){
+        $("#user-login").focus();
         if($("#username").val().length==0){
             $("#user-check").html("<font color='red'>用户名不能为空</font>");
             $("#user-login").attr("disabled",true);
@@ -30,6 +31,7 @@ $(document).ready(function(){
         }
     })
     $("#password").on('input',function(){
+        $("#user-login").focus();
         if($("#password").val().length==0){
             $("#pass-check").html("<font color='red'>密码不能为空</font>");
             $("#user-login").attr("disabled",true);
