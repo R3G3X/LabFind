@@ -14,9 +14,9 @@
 		ResultSet rs;
 		Class.forName("com.mysql.jdbc.Driver");
 		DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-		String dbUrl = "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8";
-		String dbUser = "Captain";
-		String dbPwd = "regex12345";
+		String dbUrl = "jdbc:mysql://localhost:3306/Regex_DB";
+		String dbUser = "root";
+		String dbPwd = "0000";
 		//建立数据库连接
 		con = java.sql.DriverManager
 				.getConnection(dbUrl, dbUser, dbPwd);
