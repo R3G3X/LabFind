@@ -21,9 +21,9 @@ try{
   //注册MySQL驱动程序
   DriverManager.registerDriver(new com.mysql.jdbc.Driver());
   //用适当的驱动程序连接到数据库
-  String dbUrl =  "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8";
-  String dbUser="Captain";
-  String dbPwd="regex12345";
+  String dbUrl = "jdbc:mysql://localhost:3306/Regex_DB?useUnicode=true&characterEncoding=utf-8";
+  String dbUser="root";
+  String dbPwd="0000";
   //建立数据库连接
   con = java.sql.DriverManager.getConnection(dbUrl,dbUser,dbPwd);
   //创建一个SQL声明
@@ -35,7 +35,7 @@ try{
 	  rs_count=rs.getInt("record_");    
   };
   if(rs_count==0){
-	  stmt.executeUpdate("insert into Regex_db.userbase (username,password,phone_num) values(\'"+username+"\',\'"+password+"\',\'"+phone+"\')");
+	  stmt.executeUpdate("insert into Regex_db.userbase (username,password,phone) values(\'"+username+"\',\'"+password+"\',\'"+phone+"\')");
   }
   else{
 	  out.println("already here!");
@@ -62,9 +62,6 @@ try{
   con.close();
 }catch(Exception e){out.println(e.getMessage());}
 %>
-<title>在此处插入标题</title>
 </head>
-<body>
-
-</body>
+<body></body>
 </html>

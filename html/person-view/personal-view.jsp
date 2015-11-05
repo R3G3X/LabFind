@@ -27,7 +27,7 @@
 		ResultSet rs;
 		Class.forName("com.mysql.jdbc.Driver");
 		DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-		String dbUrl = "jdbc:mysql://localhost:3306/Regex_DB?useUnicode=true&characterEncoding=utf-8";
+		String dbUrl = "jdbc:mysql://localhost:3306/Regex_DB";
 		String dbUser = "root";
 		String dbPwd = "0000";
 		con = java.sql.DriverManager.getConnection(dbUrl, dbUser, dbPwd);
@@ -41,12 +41,14 @@
 		String userIntro="";
 		String technique="";
 		String realname="";
+		String phone="";
 		while(rs.next()){
 			realname=rs.getString("realName");
 			userid=rs.getString("id");
 			avatar_loc=rs.getString("avatar");
 			userIntro=rs.getString("userintro");
 			technique=rs.getString("technique");
+			phone=rs.getString("phone");
 		}
 		avatar_loc="../../img/"+avatar_loc;
 		//project num
@@ -245,10 +247,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="alert alert-danger" role="alert">
+	<%if(phone.compareTo("")==0){%>
+	<div class="alert alert-danger" role="alert" style="margin-bottom: 0px;">
 		<strong>亲爱的用户</strong> 你还没有完善你的个人信息，请点击<a href="edit.html">这里</a>完善个人信息
 	</div>
-	<div class="container">
+	<%}%>
+	<div class="container" style="padding-top:20px;">
 		<div class="row">
 			<div class="col-md-8">
 				<div class="message-box">

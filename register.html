@@ -20,14 +20,6 @@
 
     <link href="css/flat/red.css" rel="stylesheet">
     <script src="js/icheck.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('input').iCheck({
-                checkboxClass: 'icheckbox_flat-red',
-                radioClass: 'iradio_flat-red'
-            });
-        });
-    </script>
     <style>
         fieldset label {
             float: left;
@@ -221,14 +213,6 @@
                     <input type="text" name="realName" id="realName" size="18" maxlength="15" style="float:left" /><br />
                 </div>
                 <div>
-                    <label for="identity">身份</label>
-                    <input type="text" name="identity" id="identity" size="18" maxlength="15" style="float:left" placeholder="学生/教师"><br />
-                </div>
-                <div>
-                    <label for="contactPhone">联系手机</label>
-                    <input type="text" name="contactPhone" id="contactPhone" size="18" maxlength="15" style="float:left" onkeyup="this.value=this.value.replace(/[^\d]/g,'')"/><br />
-                </div>
-                <div>
                     <label for="password">输入密码</label>
                     <input type="password" name="password" id="password3" size="18" maxlength="15" style="float:left" onChange="MinLength()"/><span id="minlength"></span><br />
                 </div>
@@ -237,31 +221,8 @@
                     <input type="password" name="password2" id="password2" size="18" maxlength="15" style="float:left" onChange="validate()" /><span id="tishi"></span><br />
                 </div>
                 <div>
-                    <label for="major">专业</label>
-                    <input type="text" name="major" id="major" size="18" maxlength="15" style="float:left"><br />
-                </div>
-                <div>
                     <label for="mail">邮箱</label>
                     <input type="text" name="mail" id="mail" size="40" maxlength="30" style="float:left"><br />
-                </div>
-                <div>
-                    <label for="java">技术</label>
-                    <table style="text-align:left">
-                        <tr>
-                            <td width="80"><input type="checkbox" id="java" style="float:left;vertical-align:middle"> java</td>
-                            <td width="80"><input type="checkbox" id="c#" style="float:left;vertical-align:middle"> c#</td>
-                            <td width="80"><input type="checkbox" id="c++" style="float:left;vertical-align:middle"> c++</td>
-                            <td width="80"><input type="checkbox" id="php" style="float:left;vertical-align:middle"> php</td>
-                            <td width="80"><input type="checkbox" id=".net" style="float:left;vertical-align:middle"> .net</td>
-                        </tr>
-                        <tr>
-                            <td width="80"><input type="checkbox" id="android" style="float:left;vertical-align:middle"> android</td>
-							<td width="80"><input type="checkbox" id="ios" style="float:left;vertical-align:middle"> ios</td>
-                            <td width="80"><input type="checkbox" id="sql" style="float:left;vertical-align:middle"> sql</td>
-                            <td width="80"><input type="checkbox" id="html5" style="float:left;vertical-align:middle"> html5</td>
-                            <td width="80"><input type="checkbox" id="pathon" style="float:left;vertical-align:middle"> pathon</td>
-                        </tr>
-                    </table>
                 </div>
                 <div style="margin-left:650px;margin-top:50px;margin-bottom:40px; width:140px">
                     <table>
