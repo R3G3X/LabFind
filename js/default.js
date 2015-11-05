@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-03 03:26:28
+* @Last Modified time: 2015-11-06 00:22:15
 */
 
 $(document).ready(function(){
@@ -69,19 +69,18 @@ $(document).ready(function(){
 
     function loginId(){
         var userid=$.cookie("userid");
-        // alert(userid);
     }
 
 
     $("#change-save").click(function(){
-        $.post("hellof.jsp",
-                {"project-name":$("#project-name").val(),
-                "founder-name":$("#founder-name").val(),
-                "brief":$("#brief").val()},
+
                 function(data){
                     if (data==1){
                         alert("0");
-                    }
+                    }$.post("hellof.jsp",
+                {"project-name":$("#project-name").val(),
+                "founder-name":$("#founder-name").val(),
+                "brief":$("#brief").val()},
                     else{
                         alert("0");
                     }
@@ -93,5 +92,6 @@ $(document).ready(function(){
             $(".dropdown").addClass("hidden");
             $("#user-pic").addClass("hidden");
             $("#login").removeClass("hidden");
+            $.cookie("userid","");
     })
 })
