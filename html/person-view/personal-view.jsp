@@ -19,8 +19,7 @@
          	}
       	}
       	if(!login||username.compareTo("")==0){
-   			out.print("<script>alert('未登录！')</script>");
-   			response.sendRedirect("../../index.html"); 
+   			response.sendRedirect("../../login403.html"); 
    			return;  	
       }
 		Connection con;
@@ -291,6 +290,10 @@
 				<div class="message-box">
 					<div class="titlebox">
 						<h3>个人信息<span style="float:right;margin-right:20px;"><small><a href="edit.html">编辑</a></small></span></h3>
+					</div>
+					<div class="box-row">
+					<h4><strong>邮箱：</strong></h4>
+					<hr/>
 					</div>
 					<div class="row" id="project-do">
 						<div class="col-md-6" style="border-right:1px solid #D9D9D9">
