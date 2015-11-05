@@ -2,13 +2,12 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-06 02:32:24
+* @Last Modified time: 2015-11-06 02:36:03
 */
 
 $(document).ready(function(){
-
-    var username=$.cookie("userid");
-    if (username!=0){
+    loginId();
+    if (userid!=""){
         $("#login").addClass("hidden");
         $(".dropdown").removeClass("hidden");
         $("#user-pic").removeClass("hidden");
