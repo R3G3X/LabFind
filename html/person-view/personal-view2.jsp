@@ -5,7 +5,16 @@
 	<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-		String username="admin";
+		String username="";
+		Cookie cookie = null;
+   		Cookie[] cookies = null;
+   		cookies = request.getCookies();
+      	for (int i = 0; i < cookies.length; i++){
+         	if(cookies[i].getName().compareTo("userid")==0){
+				username=cookies[i].getValue();
+				break;
+         	}
+      	}
 		Connection con;
 		Statement stmt;
 		ResultSet rs;

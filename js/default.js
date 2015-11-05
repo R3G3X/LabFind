@@ -57,6 +57,7 @@ $(document).ready(function(){
                     loginId();
                 })
         .error(function(data,status,e){
+            alert("用户名或密码错误！");
             if(data.status == 400){
                 $("#check-status").html("<font color='red'>密码错误</font>");
             }
@@ -70,14 +71,6 @@ $(document).ready(function(){
         var userid=$.cookie("userid");
         // alert(userid);
     }
-
-
-
-
-
-
-
-
 
 
     $("#change-save").click(function(){
