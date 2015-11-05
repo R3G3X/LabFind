@@ -5,8 +5,7 @@
 	<%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-		String username="admin";
-		String password="admin";
+		String username="hhui";
 		Connection con;
 		Statement stmt;
 		ResultSet rs;
@@ -18,15 +17,16 @@
 		con = java.sql.DriverManager.getConnection(dbUrl, dbUser, dbPwd);
 		stmt = con.createStatement();
 		rs = stmt
-				.executeQuery("select id,avatar,userintro,technique from Regex_db.userbase where username = \'"
-						+ username + "\' and password = \'"+ password + "\'");
+				.executeQuery("select * from Regex_db.userbase where username = \'"
+						+ username + "\'");
 		//personal information
 		String userid="";
 		String avatar_loc="";
 		String userIntro="";
 		String technique="";
+		String realname="";
 		while(rs.next()){
-			
+			realname=rs.getString("realName");
 			userid=rs.getString("id");
 			avatar_loc=rs.getString("avatar");
 			userIntro=rs.getString("userintro");
@@ -229,7 +229,7 @@
 						tmpavatar.src="../../img/"+loc;
 						}
 					</script>
-				<h2 id="user"><%=username%></h2>
+				<h2 id="user"><%=realname%></h2>
 				<h3 id="comment"><%=userIntro%></h3>
 				<a class="btn btn-lg btn-success" href="../project/projectview.html" role="button">管理项目</a>
 			</div>

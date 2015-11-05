@@ -191,7 +191,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     padding-left:30px;
     margin:0px;
 }
-.img-circle{margin-top:8px;}
+.img-circle{
+    margin-top:8px;
+    width: 35px;
+    height: 35px;
+}
 
 
 /*display-css*/
