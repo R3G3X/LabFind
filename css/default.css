@@ -11,10 +11,14 @@
     margin-left:340px;
     margin-top:120px;
 }
-.modal-content{
+#modalRegister .modal-content {
     width:260px;
     height:280px;
 }
+#modalRegister.modal-body{
+    height:170px;
+}
+
 #login-front{
     width:144px;
     height:400;
@@ -65,15 +69,6 @@
 }
 
 /*top-css*/
-.navigation{
-    background-color:#3C6186;
-    height:50px;
-    border:0px;
-    box-shadow:#000 1px 1px 5px;
-}
-.modal-body{
-    height:170px;
-}
 .add-left{
     height:85px;
     width:230px;
@@ -85,6 +80,13 @@
     height:85px;
     width:230px;
     margin-right:50px;
+}
+
+.navigation{
+    background-color:#3C6186;
+    height:50px;
+    border:0px;
+    box-shadow:#000 1px 1px 5px;
 }
 #brief{
     height:106px;
