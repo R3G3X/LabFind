@@ -143,13 +143,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">REG|EX</a>
+                <a class="navbar-brand" href="index.jsp">REG|EX</a>
             </div>
 
             <!-- LEFT-NAV -->
             <ul class="nav navbar-nav navbar">
-                <li><a class="top" href="html/project/projectlist.html">所有项目</a></li>
-                <li><a class="top" href="html/lab/lablist.html">实验室</a></li>
+                <li><a class="top" href="html/project/projectlist.jsp">所有项目</a></li>
+                <li><a class="top" href="html/lab/lablist.jsp">实验室</a></li>
             </ul>
 
             <!-- RIGHT-NAV -->
@@ -198,7 +198,7 @@
                 <h1>REG | EX</h1>
                 <h2>想找实验室么？想找项目做？REG|EX 是您的最佳解决方案</h2>
                 <p>
-                    <a id="find-project" onclick="_hmt.push(['_trackEvent', 'masthead', 'click', 'masthead-Bootstrap3中文文档'])" role="button" target="" href="html/project/projectlist.html">我要找项目</a>
+                    <a id="find-project" onclick="_hmt.push(['_trackEvent', 'masthead', 'click', 'masthead-Bootstrap3中文文档'])" role="button" target="" href="html/project/projectlist.jsp">我要找项目</a>
                 </p>
                 <p>
                     <a id="join-us" onclick="_hmt.push(['_trackEvent', 'masthead', 'click', 'masthead-Bootstrap2中文文档'])" role="button" target="_blank" href="http://v2.bootcss.com/">加入我们</a>
@@ -280,7 +280,7 @@
                         </div>
                     </div>
 
-                    <a class="more-info" href="html/project/projectlist.html">
+                    <a class="more-info" href="html/project/projectlist.jsp">
                         更多信息 >>>
                     </a>
 
@@ -357,7 +357,7 @@
                             </div>
                         </div>
                     </div>
-                    <a class="more-info" href="html/lab/lablist.html">
+                    <a class="more-info" href="html/lab/lablist.jsp">
                         更多信息 >>>
                     </a>
                 </div>

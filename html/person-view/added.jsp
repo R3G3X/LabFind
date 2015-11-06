@@ -172,8 +172,8 @@
 
             <!-- LEFT-NAV -->
             <ul class="nav navbar-nav navbar">
-                <li><a class="top" href="../project/projectlist.html">所有项目</a></li>
-                <li><a class="top" href="../lab/lablist.html">实验室</a></li>
+                <li><a class="top" href="../project/projectlist.jsp">所有项目</a></li>
+                <li><a class="top" href="../lab/lablist.jsp">实验室</a></li>
             </ul>
 
             <!-- RIGHT-NAV -->

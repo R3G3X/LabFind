@@ -23,57 +23,57 @@
     username=cookies[i].getValue();
     login=true;
     break;
-}
-}
-if(!login||username.compareTo("")==0){
-response.sendRedirect("../../login403.html"); 
-return;     
-}
-Connection con;
-Statement stmt;
-ResultSet rs;
-Class.forName("com.mysql.jdbc.Driver");
-DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-String dbUrl = "jdbc:mysql://localhost:3306/Regex_DB";
-String dbUser = "root";
-String dbPwd = "0000";
-con = java.sql.DriverManager.getConnection(dbUrl, dbUser, dbPwd);
-stmt = con.createStatement();
-rs = stmt
-.executeQuery("select * from Regex_db.userbase where username = \'"
-    + username + "\'");
-        //personal information
-String userid="";
-String avatar_loc="";
-String userIntro="";
-String technique="";
-String realname="";
-String phone="";
-while(rs.next()){
-realname=rs.getString("realName");
-userid=rs.getString("id");
-avatar_loc=rs.getString("avatar");
-userIntro=rs.getString("userintro");
-technique=rs.getString("technique");
-phone=rs.getString("phone");
-}
-avatar_loc="../../img/"+avatar_loc;
-        //project num
-rs = stmt
-.executeQuery("select count(1) from(select projectbase.id,projectbase.projectname from Regex_db.projectbase where (founderid = \'"
-    +userid +"\' or memberid like \'%"+userid+"%\') and projectstatus=1)as a");
-int count_finished=0;
-int count_unfinished=0;
-while(rs.next()){           
-count_unfinished=rs.getInt(1);
-}
-rs = stmt
-.executeQuery("select count(1) from(select projectbase.id,projectbase.projectname from Regex_db.projectbase where (founderid = \'"
-    +userid +"\' or memberid like \'%"+userid+"%\') and projectstatus=2)as a");
+    }
+    }
+    if(!login||username.compareTo("")==0){
+    response.sendRedirect("../../login403.html"); 
+    return;     
+    }
+    Connection con;
+    Statement stmt;
+    ResultSet rs;
+    Class.forName("com.mysql.jdbc.Driver");
+    DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+    String dbUrl = "jdbc:mysql://localhost:3306/Regex_DB";
+    String dbUser = "root";
+    String dbPwd = "0000";
+    con = java.sql.DriverManager.getConnection(dbUrl, dbUser, dbPwd);
+    stmt = con.createStatement();
+    rs = stmt
+    .executeQuery("select * from Regex_db.userbase where username = \'"
+        + username + "\'");
+            //personal information
+    String userid="";
+    String avatar_loc="";
+    String userIntro="";
+    String technique="";
+    String realname="";
+    String phone="";
+    while(rs.next()){
+    realname=rs.getString("realName");
+    userid=rs.getString("id");
+    avatar_loc=rs.getString("avatar");
+    userIntro=rs.getString("userintro");
+    technique=rs.getString("technique");
+    phone=rs.getString("phone");
+    }
+    avatar_loc="../../img/"+avatar_loc;
+            //project num
+    rs = stmt
+    .executeQuery("select count(1) from(select projectbase.id,projectbase.projectname from Regex_db.projectbase where (founderid = \'"
+        +userid +"\' or memberid like \'%"+userid+"%\') and projectstatus=1)as a");
+    int count_finished=0;
+    int count_unfinished=0;
     while(rs.next()){           
-    count_finished=rs.getInt(1);
-}
-System.out.println("ok");
+    count_unfinished=rs.getInt(1);
+    }
+    rs = stmt
+    .executeQuery("select count(1) from(select projectbase.id,projectbase.projectname from Regex_db.projectbase where (founderid = \'"
+        +userid +"\' or memberid like \'%"+userid+"%\') and projectstatus=2)as a");
+        while(rs.next()){           
+        count_finished=rs.getInt(1);
+    }
+    System.out.println("ok");
 %>
 <link href="../../css/bootstrap.min.css" rel="stylesheet" />
 <link href="../../css/default.css" rel="stylesheet" />
@@ -236,8 +236,8 @@ System.out.println("ok");
 
         <!-- LEFT-NAV -->
         <ul class="nav navbar-nav navbar">
-            <li><a class="top" href="../project/projectlist.html">所有项目</a></li>
-            <li><a class="top" href="../lab/lablist.html">实验室</a></li>
+            <li><a class="top" href="../project/projectlist.jsp">所有项目</a></li>
+            <li><a class="top" href="../lab/lablist.jsp">实验室</a></li>
         </ul>
 
         <!-- RIGHT-NAV -->
