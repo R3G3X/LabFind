@@ -326,7 +326,7 @@
                         </div>
                         <div class="col-md-3">
                             <div class="thumbnail" style="padding:0px;">
-                                <img src="http://ibootstrap-file.b0.upaiyun.com/lorempixel.com/600/200/people/default.jpg" class="avatar" />
+                                <img src="img/default.jpg" class="avatar" />
                                 <div class="block" style="padding:0px;">
                                     <div class="meta clearfix text-center">
                                         <img src="img/Screen Shot 2015-09-14 at 3.21.38 PM.png" class="img-circle av-circle">
