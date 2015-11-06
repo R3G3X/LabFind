@@ -1,1 +1,1 @@
-可以在https://github.com/R3G3X/LabFind/上下载最新的版本
+可以在 https://github.com/R3G3X/LabFind/ 上下载最新的版本

@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.21, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.9, for Win64 (x86_64)
 --
 -- Host: localhost    Database: regex_db
 -- ------------------------------------------------------
--- Server version	5.6.21-log
+-- Server version	5.7.9-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -79,7 +79,6 @@ CREATE TABLE `projectbase` (
   `projectname` varchar(45) NOT NULL,
   `createtime` datetime DEFAULT NULL,
   `fintime` datetime DEFAULT NULL,
-  `founder` varchar(45) NOT NULL,
   `founderid` int(11) NOT NULL,
   `labid` int(11) DEFAULT NULL,
   `projectintro` varchar(100) DEFAULT NULL,
@@ -98,7 +97,7 @@ CREATE TABLE `projectbase` (
 
 LOCK TABLES `projectbase` WRITE;
 /*!40000 ALTER TABLE `projectbase` DISABLE KEYS */;
-INSERT INTO `projectbase` VALUES (1,'pro1',NULL,NULL,'f1',1,NULL,NULL,NULL,NULL,NULL,NULL,1),(2,'pro2',NULL,NULL,'f2',2,NULL,NULL,NULL,NULL,NULL,'3,1',1),(3,'pro3',NULL,NULL,'f4',4,NULL,NULL,NULL,NULL,NULL,'5',1),(4,'pro4',NULL,NULL,'f5',5,NULL,NULL,NULL,NULL,NULL,'1',2);
+INSERT INTO `projectbase` VALUES (1,'pro1',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,1),(2,'pro2',NULL,NULL,2,NULL,NULL,NULL,NULL,NULL,'3,1',1),(3,'pro3',NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,'5',1),(4,'pro4',NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,'1',2);
 /*!40000 ALTER TABLE `projectbase` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -147,8 +146,9 @@ CREATE TABLE `userbase` (
   `major` varchar(45) DEFAULT NULL,
   `technique` varchar(100) DEFAULT NULL,
   `labAdded` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username_UNIQUE` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -157,7 +157,7 @@ CREATE TABLE `userbase` (
 
 LOCK TABLES `userbase` WRITE;
 /*!40000 ALTER TABLE `userbase` DISABLE KEYS */;
-INSERT INTO `userbase` VALUES (1,'MsJiang','12345678','蒋悦紫晗','17000000000','我很2','img/MsJiang.png','0','598868984@qq.com','软件工程','卖萌',NULL);
+INSERT INTO `userbase` VALUES (1,'jiang','jiang','蒋悦紫晗','17000000000','我很2','MsJiang.png','0','598868984@qq.com','软件工程','卖萌',NULL),(2,'admin','admin','administrator','1333','i am admin','cb4edb100d6627155fd085be96b9587f.jpeg','1','admin@regex.com','admin','a',NULL),(3,'hhui','hhui','机智汇','','我就是辣么机智！','avatar3.jpg','0','502597562@qq.com','软件','C++',NULL);
 /*!40000 ALTER TABLE `userbase` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -170,4 +170,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-03 17:16:00
+-- Dump completed on 2015-11-06 11:31:53
