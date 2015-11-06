@@ -53,7 +53,7 @@ $(document).ready(function(){
 
 // LOGIN-POST
     $("#user-login").click(function(){
-        $.post("login.jsp",
+        $.post("/login.jsp",
                 {"username":$("#username").val(),
                 "password":$("#password").val()},
                 function(data, status, xhr){
