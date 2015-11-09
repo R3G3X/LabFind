@@ -54,22 +54,25 @@
 		项目名称		projectname
 		创建时间		createtime
 		完成时间		fintime
-		创建人			founder
 		创建人			founderid
 		所属实验室		labid
 		简介			projectintro
 		需要的人数		requirenum
 		技术			technique
 		项目图片		image
-		成员			memberid				([id1,id2,id3])
 		项目状态		projectstatus			(0:pending 1:inprogess 2:finished)默认0
+	}
+	
+	项目的人{
+		项目id			projectid
+		用户id			userid
+		状态			status				(0:waiting 1:accepted)
 	}
 	实验{
 		实验室id		id
 		名称			labname
 		一句话简介		labintro
 		指导老师		leader				([userid1,userid2,userid3])
-		
 		成员			member				([userid1,userid2,userid3])
 		研究方向		research
 	}
@@ -79,6 +82,18 @@
 		研究方向		research
 		对应id			userid
 	}
+	个人动态{
+		用户id															userbase.id
+	    时间 															time
+	    描述(我加入了一个项目、我结束了一个项目、我创建了一个项目)		status
+	    项目名称														projectbase.id
+	}
+	实验室动态:个人动态{
+	    实验室id														labbase.id	
+	    创建人															userbase.id
+	    
+	}
+	    
 }
 
 *time的格式为YYYY-MM-DD

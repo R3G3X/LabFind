@@ -51,21 +51,6 @@
 			phone=rs.getString("phone");
 		}
 		avatar_loc="../../img/"+avatar_loc;
-		//project num
-		rs = stmt
-				.executeQuery("select count(1) from(select projectbase.id,projectbase.projectname from Regex_db.projectbase where (founderid = \'"
-						+userid	+"\' or memberid like \'%"+userid+"%\') and projectstatus=1)as a");
-		int count_finished=0;
-		int count_unfinished=0;
-		while(rs.next()){			
-			count_unfinished=rs.getInt(1);
-		}
-		rs = stmt
-				.executeQuery("select count(1) from(select projectbase.id,projectbase.projectname from Regex_db.projectbase where (founderid = \'"
-						+userid	+"\' or memberid like \'%"+userid+"%\') and projectstatus=2)as a");
-		while(rs.next()){			
-			count_finished=rs.getInt(1);
-		}
 		System.out.println("ok");
 		%>
 	<meta charset="utf-8" />

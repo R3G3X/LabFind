@@ -8,7 +8,6 @@
 	try {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-
 		Connection con;
 		Statement stmt;
 		ResultSet rs;
