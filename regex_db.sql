@@ -85,7 +85,6 @@ CREATE TABLE `projectbase` (
   `requirenum` int(11) DEFAULT NULL,
   `technique` varchar(45) DEFAULT NULL,
   `image` varchar(100) DEFAULT NULL,
-  `memberid` varchar(45) DEFAULT NULL,
   `projectstatus` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
@@ -97,8 +96,34 @@ CREATE TABLE `projectbase` (
 
 LOCK TABLES `projectbase` WRITE;
 /*!40000 ALTER TABLE `projectbase` DISABLE KEYS */;
-INSERT INTO `projectbase` VALUES (1,'pro1',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,1),(2,'pro2',NULL,NULL,2,NULL,NULL,NULL,NULL,NULL,'3,1',1),(3,'pro3',NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,'5',1),(4,'pro4',NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,'1',2);
+INSERT INTO `projectbase` VALUES (1,'pro1',NULL,NULL,1,NULL,NULL,NULL,NULL,NULL,1),(2,'pro2',NULL,NULL,2,NULL,NULL,NULL,NULL,NULL,1),(3,'pro3',NULL,NULL,4,NULL,NULL,NULL,NULL,NULL,1),(4,'pro4',NULL,NULL,5,NULL,NULL,NULL,NULL,NULL,2);
 /*!40000 ALTER TABLE `projectbase` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `projectqueue`
+--
+
+DROP TABLE IF EXISTS `projectqueue`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `projectqueue` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `projectid` int(11) DEFAULT NULL,
+  `userid` int(11) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `memo` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `projectqueue`
+--
+
+LOCK TABLES `projectqueue` WRITE;
+/*!40000 ALTER TABLE `projectqueue` DISABLE KEYS */;
+/*!40000 ALTER TABLE `projectqueue` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -148,7 +173,7 @@ CREATE TABLE `userbase` (
   `labAdded` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username_UNIQUE` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -160,6 +185,31 @@ LOCK TABLES `userbase` WRITE;
 INSERT INTO `userbase` VALUES (1,'jiang','jiang','蒋悦紫晗','17000000000','我很2','MsJiang.png','0','598868984@qq.com','软件工程','卖萌',NULL),(2,'admin','admin','administrator','1333','i am admin','cb4edb100d6627155fd085be96b9587f.jpeg','1','admin@regex.com','admin','a',NULL),(3,'hhui','hhui','机智汇','','我就是辣么机智！','avatar3.jpg','0','502597562@qq.com','软件','C++',NULL);
 /*!40000 ALTER TABLE `userbase` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `userupdate`
+--
+
+DROP TABLE IF EXISTS `userupdate`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `userupdate` (
+  `id` int(11) NOT NULL,
+  `userbaseid` int(11) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `projectid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `userupdate`
+--
+
+LOCK TABLES `userupdate` WRITE;
+/*!40000 ALTER TABLE `userupdate` DISABLE KEYS */;
+/*!40000 ALTER TABLE `userupdate` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -170,4 +220,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-06 11:31:53
+-- Dump completed on 2015-11-11 22:58:08
