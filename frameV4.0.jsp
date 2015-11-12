@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <%@ include file="head.jsp"%>
-    <link href="css/front-page.css" rel="stylesheet" />
 </head>
 <body>
     <%@ include file="nav.jsp"%>
