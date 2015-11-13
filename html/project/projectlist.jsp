@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <%@ include file="../../head.jsp"%>
+    <script type="text/javascript" src="../../js/pagination.js"></script>
     <link href="../../css/project.css" rel="stylesheet" />
 </head>
 <body>
@@ -16,7 +17,9 @@
         <div class="container">
             <div class="row clearfix">
                 <div class="col-md-9 column">
-                    <ul>
+                    <input type='hidden' id='currentPage' />
+                    <input type='hidden' id='numPerPage' />
+                    <ul id="project-content">
                         <li class="project-tag">
                             <div class="tag-box">
 
@@ -269,9 +272,6 @@
 
                             </div>
                         </li>
-
-
-
                     </ul>
                 </div>
 
@@ -291,11 +291,6 @@
             <div class="col-md-4 column"></div>
             <div class="col-md-4 column">
                 <ul class="pagination">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">&raquo;</a></li>
                 </ul>
             </div>
         </div>
