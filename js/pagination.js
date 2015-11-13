@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-13 08:33:51
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-13 09:43:53
+* @Last Modified time: 2015-11-13 11:44:46
 */
 
 $(document).ready(function(){
@@ -11,13 +11,13 @@ $(document).ready(function(){
     var numPage = Math.ceil(numItem / numPerPage);
     $("#currentPage").val(0);
     $("#numPerPage").val(numPerPage);
-    var navHtml = '<li><a class="previous_link" href="javascript:previous();">Prev</a></li>';
+    var navHtml = '<a class="previous_link" href="javascript:prev();">Prev</a>';
     var currentLink = 0;
     while (numPage > currentLink){
-        navHtml += '<li><a class="pageLink" href="javascript:goToPage('+currentLink+');" longdesc="'+currentLink+'">'+(currentLink + 1)+'</a></li>';
+        navHtml += '<a class="pageLink" href="javascript:goToPage('+currentLink+');" longdesc="'+currentLink+'">'+(currentLink + 1)+'</a>';
         currentLink ++;
     }
-    navHtml += '<li><a class="next_link" href="javascript:next();">Next</a></li>';
+    navHtml += '<a class="next_link" href="javascript:next();">Next</a>';
     $("#pagination").html(navHtml);
     $("#pagination .pageLink:first").addClass("active");
     $("#project-content").children().css("display","none");
@@ -31,8 +31,8 @@ function goToPage(pageNum){
     var numPerPage = parseInt($("#numPerPage").val());
     startPage = pageNum * numPerPage;
     endPage = startPage + numPerPage;
-    $("#project-ontent").children().css("display","none").slice(startPage, endPage).css("display", "block");
-    $(".pageLink[longdesc="+pageNum+"]").addClass('active').siblings('.active').removeClass('active');
+    $("#project-content").children().css("display","none").slice(startPage, endPage).css("display", "block");
+    $('.pageLink[longdesc=' + pageNum +']').addClass('active').siblings('.active').removeClass('active');
     $("#currentPage").val(pageNum);
 }
 
