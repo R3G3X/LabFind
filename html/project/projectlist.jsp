@@ -272,6 +272,238 @@
 
                             </div>
                         </li>
+
+                        <li class="project-tag">
+                            <div class="tag-box">
+
+                                <!-- 主要信息 -->
+                                <div class="project-box">
+                                    <a href="projectview.jsp" class="project-drb">
+                                        <img class="tag-image" src="../../img/background-img.jpg">
+                                        <h3>创新创业大赛</h3>
+                                        <div class="project-text"><p>描述：华师大计软学院举办的创新创业大赛，做一个项目发布的网站</p>
+                                        </div>
+                                    </a>
+                                    <a href="#"><span class="require label label-default">C/C++</span></a>
+                                    <a href="#"><span class="require label label-primary">Java</span></a>
+                                </div>
+
+                                <!-- 发布信息 -->
+                                <div class="creator-box">
+                                    <div style="display:inline text-align:center">
+                                        <img src="../../img/avater.png" class="img-circle" id="img-down">
+                                        <a href="../person-view/personal-view.html" id="person-info">机制汇</a>
+
+                                        <img src="../../img/person.png" style="width:20px;height:20px;margin-left:20px" title="人数">10
+                                    </div>
+                                    <h6>2015-11-3</h6>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="project-tag">
+                            <div class="tag-box">
+
+                                <!-- 主要信息 -->
+                                <div class="project-box">
+                                    <a href="projectview.jsp" class="project-drb">
+                                        <img class="tag-image" src="../../img/background-img.jpg">
+                                        <h3>创新创业大赛</h3>
+                                        <div class="project-text"><p>描述：华师大计软学院举办的创新创业大赛，做一个项目发布的网站</p>
+                                        </div>
+                                    </a>
+                                    <a href="#"><span class="require label label-default">C/C++</span></a>
+                                    <a href="#"><span class="require label label-primary">Java</span></a>
+                                </div>
+
+                                <!-- 发布信息 -->
+                                <div class="creator-box">
+                                    <div style="display:inline text-align:center">
+                                        <img src="../../img/avater.png" class="img-circle" id="img-down">
+                                        <a href="../person-view/personal-view.html" id="person-info">机制汇</a>
+
+                                        <img src="../../img/person.png" style="width:20px;height:20px;margin-left:20px" title="人数">10
+                                    </div>
+                                    <h6>2015-11-3</h6>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="project-tag">
+                            <div class="tag-box">
+
+                                <!-- 主要信息 -->
+                                <div class="project-box">
+                                    <a href="projectview.jsp" class="project-drb">
+                                        <img class="tag-image" src="../../img/background-img.jpg">
+                                        <h3>创新创业大赛</h3>
+                                        <div class="project-text"><p>描述：华师大计软学院举办的创新创业大赛，做一个项目发布的网站</p>
+                                        </div>
+                                    </a>
+                                    <a href="#"><span class="require label label-default">C/C++</span></a>
+                                    <a href="#"><span class="require label label-primary">Java</span></a>
+                                </div>
+
+                                <!-- 发布信息 -->
+                                <div class="creator-box">
+                                    <div style="display:inline text-align:center">
+                                        <img src="../../img/avater.png" class="img-circle" id="img-down">
+                                        <a href="../person-view/personal-view.html" id="person-info">机制汇</a>
+
+                                        <img src="../../img/person.png" style="width:20px;height:20px;margin-left:20px" title="人数">10
+                                    </div>
+                                    <h6>2015-11-3</h6>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="project-tag">
+                            <div class="tag-box">
+
+                                <!-- 主要信息 -->
+                                <div class="project-box">
+                                    <a href="projectview.jsp" class="project-drb">
+                                        <img class="tag-image" src="../../img/background-img.jpg">
+                                        <h3>创新创业大赛</h3>
+                                        <div class="project-text"><p>描述：华师大计软学院举办的创新创业大赛，做一个项目发布的网站</p>
+                                        </div>
+                                    </a>
+                                    <a href="#"><span class="require label label-default">C/C++</span></a>
+                                    <a href="#"><span class="require label label-primary">Java</span></a>
+                                </div>
+
+                                <!-- 发布信息 -->
+                                <div class="creator-box">
+                                    <div style="display:inline text-align:center">
+                                        <img src="../../img/avater.png" class="img-circle" id="img-down">
+                                        <a href="../person-view/personal-view.html" id="person-info">机制汇</a>
+
+                                        <img src="../../img/person.png" style="width:20px;height:20px;margin-left:20px" title="人数">10
+                                    </div>
+                                    <h6>2015-11-3</h6>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="project-tag">
+                            <div class="tag-box">
+
+                                <!-- 主要信息 -->
+                                <div class="project-box">
+                                    <a href="projectview.jsp" class="project-drb">
+                                        <img class="tag-image" src="../../img/background-img.jpg">
+                                        <h3>创新创业大赛</h3>
+                                        <div class="project-text"><p>描述：华师大计软学院举办的创新创业大赛，做一个项目发布的网站</p>
+                                        </div>
+                                    </a>
+                                    <a href="#"><span class="require label label-default">C/C++</span></a>
+                                    <a href="#"><span class="require label label-primary">Java</span></a>
+                                </div>
+
+                                <!-- 发布信息 -->
+                                <div class="creator-box">
+                                    <div style="display:inline text-align:center">
+                                        <img src="../../img/avater.png" class="img-circle" id="img-down">
+                                        <a href="../person-view/personal-view.html" id="person-info">机制汇</a>
+
+                                        <img src="../../img/person.png" style="width:20px;height:20px;margin-left:20px" title="人数">10
+                                    </div>
+                                    <h6>2015-11-3</h6>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="project-tag">
+                            <div class="tag-box">
+
+                                <!-- 主要信息 -->
+                                <div class="project-box">
+                                    <a href="projectview.jsp" class="project-drb">
+                                        <img class="tag-image" src="../../img/background-img.jpg">
+                                        <h3>创新创业大赛</h3>
+                                        <div class="project-text"><p>描述：华师大计软学院举办的创新创业大赛，做一个项目发布的网站</p>
+                                        </div>
+                                    </a>
+                                    <a href="#"><span class="require label label-default">C/C++</span></a>
+                                    <a href="#"><span class="require label label-primary">Java</span></a>
+                                </div>
+
+                                <!-- 发布信息 -->
+                                <div class="creator-box">
+                                    <div style="display:inline text-align:center">
+                                        <img src="../../img/avater.png" class="img-circle" id="img-down">
+                                        <a href="../person-view/personal-view.html" id="person-info">机制汇</a>
+
+                                        <img src="../../img/person.png" style="width:20px;height:20px;margin-left:20px" title="人数">10
+                                    </div>
+                                    <h6>2015-11-3</h6>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="project-tag">
+                            <div class="tag-box">
+
+                                <!-- 主要信息 -->
+                                <div class="project-box">
+                                    <a href="projectview.jsp" class="project-drb">
+                                        <img class="tag-image" src="../../img/background-img.jpg">
+                                        <h3>创新创业大赛</h3>
+                                        <div class="project-text"><p>描述：华师大计软学院举办的创新创业大赛，做一个项目发布的网站</p>
+                                        </div>
+                                    </a>
+                                    <a href="#"><span class="require label label-default">C/C++</span></a>
+                                    <a href="#"><span class="require label label-primary">Java</span></a>
+                                </div>
+
+                                <!-- 发布信息 -->
+                                <div class="creator-box">
+                                    <div style="display:inline text-align:center">
+                                        <img src="../../img/avater.png" class="img-circle" id="img-down">
+                                        <a href="../person-view/personal-view.html" id="person-info">机制汇</a>
+
+                                        <img src="../../img/person.png" style="width:20px;height:20px;margin-left:20px" title="人数">10
+                                    </div>
+                                    <h6>2015-11-3</h6>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="project-tag">
+                            <div class="tag-box">
+
+                                <!-- 主要信息 -->
+                                <div class="project-box">
+                                    <a href="projectview.jsp" class="project-drb">
+                                        <img class="tag-image" src="../../img/background-img.jpg">
+                                        <h3>创新创业大赛</h3>
+                                        <div class="project-text"><p>描述：华师大计软学院举办的创新创业大赛，做一个项目发布的网站</p>
+                                        </div>
+                                    </a>
+                                    <a href="#"><span class="require label label-default">C/C++</span></a>
+                                    <a href="#"><span class="require label label-primary">Java</span></a>
+                                </div>
+
+                                <!-- 发布信息 -->
+                                <div class="creator-box">
+                                    <div style="display:inline text-align:center">
+                                        <img src="../../img/avater.png" class="img-circle" id="img-down">
+                                        <a href="../person-view/personal-view.html" id="person-info">机制汇</a>
+
+                                        <img src="../../img/person.png" style="width:20px;height:20px;margin-left:20px" title="人数">10
+                                    </div>
+                                    <h6>2015-11-3</h6>
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -290,7 +522,7 @@
         <div class="row" style="margin:30px">
             <div class="col-md-4 column"></div>
             <div class="col-md-4 column">
-                <ul class="pagination">
+                <ul class="pagination" id="paging">
                 </ul>
             </div>
         </div>
