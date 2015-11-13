@@ -2,11 +2,14 @@
 * @Author: Ed_Strickland
 * @Date:   2015-11-13 08:33:51
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-13 12:16:46
+* @Last Modified time: 2015-11-13 12:25:37
 */
 
 $(document).ready(function(){
-    var numPerPage = 6;
+    if(window.location.pathname == "/html/lab/lablist.jsp")
+        var numPerPage = 12;
+    else
+        var numPerPage = 6;
     var numItem = $("#project-content").children().size();
     var numPage = Math.ceil(numItem / numPerPage);
     $("#currentPage").val(0);
