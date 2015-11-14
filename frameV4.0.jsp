@@ -5,8 +5,8 @@
 </head>
 <body>
     <%@ include file="nav.jsp"%>
-    <div class="content">
-        <!-- you code here -->
+    <div id="content">
+        <p>Hello World!</p>
     </div>
     <%@ include file="bottom.jsp"%>
 </body>
