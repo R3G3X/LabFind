@@ -244,44 +244,40 @@ fieldset input {
 
 	</div>
 	<script type="text/javascript">
-        function validate() {
-            var pw1 = document.getElementById("password3").value;
-            var pw2 = document.getElementById("password2").value;
-            if (pw1 == pw2) {
-                document.getElementById("tishi").innerHTML = "<font color='green'></font>";
-                document.getElementById("submit").disabled = false;
-            }
-            else {
-                document.getElementById("tishi").innerHTML = "<font color='red'>两次密码不相同</font>";
-                document.getElementById("submit").disabled = true;
-            }
+		function validate() {
+			var pw1 = document.getElementById("password3").value;
+			var pw2 = document.getElementById("password2").value;
+			if (pw1 == pw2) {
+				document.getElementById("tishi").innerHTML = "<font color='green'></font>";
+				document.getElementById("submit").disabled = false;
+			} else {
+				document.getElementById("tishi").innerHTML = "<font color='red'>两次密码不相同</font>";
+				document.getElementById("submit").disabled = true;
+			}
 
-        }
-        function MinLength() {
-            var pw1 = document.getElementById("password3").value;
-            if (pw1.length>=8) {
-                document.getElementById("minlength").innerHTML = "<font color='green'></font>";
-                document.getElementById("submit").disabled = false;
-            }
-            else {
-                document.getElementById("minlength").innerHTML = "<font color='red'>密码长度须超过8位</font>";
-                document.getElementById("submit").disabled = true;
-            }
+		}
+		function MinLength() {
+			var pw1 = document.getElementById("password3").value;
+			if (pw1.length >= 8) {
+				document.getElementById("minlength").innerHTML = "<font color='green'></font>";
+				document.getElementById("submit").disabled = false;
+			} else {
+				document.getElementById("minlength").innerHTML = "<font color='red'>密码长度须超过8位</font>";
+				document.getElementById("submit").disabled = true;
+			}
 
-        }
-        function submit_check(){
-        	for(var i=0;i<document.register_form.elements.length-1;i++)
-            {
-             if(document.register_form.elements[i].value=="")
-             {
-                 document.register_form.elements[i].focus();
-              alert("当前表单不能有空项");
-              return false;
-             }
-            }
-        	return true;
-        }
-    </script>
+		}
+		function submit_check() {
+			for (var i = 0; i < document.register_form.elements.length - 1; i++) {
+				if (document.register_form.elements[i].value == "") {
+					document.register_form.elements[i].focus();
+					alert("当前表单不能有空项");
+					return false;
+				}
+			}
+			return true;
+		}
+	</script>
 	<!-- END OF YOUR CODE#00 -->
 	<!-- DO NOT EDIT THIS LINE AND ANY LINES BETWEEN THEM -->
 	<!-- BOTTOM#03 -->

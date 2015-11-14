@@ -3,8 +3,8 @@
 	pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
 <%
-    Connection con = null;
-    String base = request.getContextPath();
+	Connection con = null;
+	String base = request.getContextPath();
     String avatar_loc="";
     String realname="";
     String username="";
@@ -21,8 +21,8 @@
             }
         }
         if(login){
-            Statement stmt;
-            ResultSet rs;
+       		Statement stmt;
+        	ResultSet rs;
             Class.forName("com.mysql.jdbc.Driver");
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
             String dbUrl = "jdbc:mysql://121.42.147.131:3306/Regex_DB";

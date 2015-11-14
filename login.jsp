@@ -17,8 +17,7 @@
 		String dbUser = "root";
 		String dbPwd = "0000";
 		//建立数据库连接
-		con = java.sql.DriverManager
-				.getConnection(dbUrl, dbUser, dbPwd);
+		con = java.sql.DriverManager.getConnection(dbUrl, dbUser, dbPwd);
 		//创建一个SQL声明
 		stmt = con.createStatement();
 		rs = stmt
@@ -47,6 +46,5 @@
 <title>在此处插入标题</title>
 </head>
 <body>
-
 </body>
 </html>
