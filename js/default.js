@@ -2,7 +2,7 @@
 * @Author: Ed_Strickland
 * @Date:   2015-10-22 08:45:08
 * @Last Modified by:   Ed_Strickland
-* @Last Modified time: 2015-11-06 02:57:07
+* @Last Modified time: 2015-11-16 10:18:20
 */
 
 $(document).ready(function(){
@@ -53,7 +53,7 @@ $(document).ready(function(){
 
 // LOGIN-POST
     $("#user-login").click(function(){
-        $.post("/login.jsp",
+        $.post("login.jsp",
                 {"username":$("#username").val(),
                 "password":$("#password").val()},
                 function(data, status, xhr){
@@ -69,7 +69,6 @@ $(document).ready(function(){
                     location.reload();
                 })
         .error(function(data,status,e){
-            alert("用户名或密码错误！");
             if(data.status == 400){
                 $("#check-status").html("<font color='red'>密码错误</font>");
             }
