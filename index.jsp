@@ -1,34 +1,39 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <%@ include file="head.jsp"%>
-    <link href="css/front-page.css" rel="stylesheet" />
+<%@ include file="head.jsp"%>
+<link href="css/front-page.css" rel="stylesheet" />
 </head>
 <body>
-    <%@ include file="nav.jsp"%>
+	<%@ include file="nav.jsp"%>
 
-    <div class="content">
-        <!-- 你的代码写在这里 -->
-        <div style="background:url(img/background-img.jpg) no-repeat fixed center center / cover;border-bottom: 5px solid #3C6186;margin-top:-30px;padding-bottom:0px;box-shadow:#000 1px 1px 5px">
-            <div id="front-page">
-                <h1>REG | EX</h1>
-                <h2>想找实验室么？想找项目做？REG|EX 是您的最佳解决方案</h2>
-                <p>
-                    <a id="find-project" onclick="_hmt.push(['_trackEvent', 'masthead', 'click', 'masthead-Bootstrap3中文文档'])" role="button" target="" href="html/project/projectlist.jsp">我要找项目</a>
-                </p>
-                <p>
-                    <a id="join-us" onclick="_hmt.push(['_trackEvent', 'masthead', 'click', 'masthead-Bootstrap2中文文档'])" role="button" target="_blank" href="http://v2.bootcss.com/">加入我们</a>
-                </p>
-            </div>
-        </div>
+	<div class="content">
+		<!-- 你的代码写在这里 -->
+		<div
+			style="background: url(img/background-img.jpg) no-repeat fixed center center/cover; border-bottom: 5px solid #3C6186; margin-top: -30px; padding-bottom: 0px; box-shadow: #000 1px 1px 5px">
+			<div id="front-page">
+				<h1>REG | EX</h1>
+				<h2>想找实验室么？想找项目做？REG|EX 是您的最佳解决方案</h2>
+				<p>
+					<a id="find-project"
+						onclick="_hmt.push(['_trackEvent', 'masthead', 'click', 'masthead-Bootstrap3中文文档'])"
+						role="button" target="" href="html/project/projectlist.jsp">我要找项目</a>
+				</p>
+				<p>
+					<a id="join-us"
+						onclick="_hmt.push(['_trackEvent', 'masthead', 'click', 'masthead-Bootstrap2中文文档'])"
+						role="button" target="_blank" href="http://v2.bootcss.com/">加入我们</a>
+				</p>
+			</div>
+		</div>
 
-        <!-- CONTENT -->
-        <div style="border-bottom:1px solid #3C6186;">
+		<!-- CONTENT -->
+		<div style="border-bottom: 1px solid #3C6186;">
 
-            <!-- PROGRAMMER -->
-            <div class="box">
-                <div class="container" style="padding-top:30px;">
-                    <h3 class-"head-line">热门项目</h3>
+			<!-- PROGRAMMER -->
+			<div class="box">
+				<div class="container" style="padding-top: 30px;">
+					<h3class-"head-line">热门项目</h3>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="thumbnail" style="padding:0px;">
@@ -101,12 +106,12 @@
                     </a>
 
                 </div>
-            </div>
+			</div>
 
-            <!-- PROJECT -->
-            <div class="box">
-                <div class="container" style="padding-top:30px;">
-                    <h3 class-"head-line">热门实验室</h3>
+			<!-- PROJECT -->
+			<div class="box">
+				<div class="container" style="padding-top: 30px;">
+					<h3class-"head-line">热门实验室</h3>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="thumbnail" style="padding:0px;">
@@ -177,10 +182,10 @@
                         更多信息 >>>
                     </a>
                 </div>
-            </div>
-        </div>
-    </div>
+			</div>
+		</div>
+	</div>
 
-    <%@ include file="bottom.jsp"%>
+	<%@ include file="bottom.jsp"%>
 </body>
 </html>

@@ -1,13 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <%@ include file="head.jsp"%>
+<%@ include file="head.jsp"%>
 </head>
 <body>
-    <%@ include file="nav.jsp"%>
-    <div class="content">
-        <!-- you code here -->
-    </div>
-    <%@ include file="bottom.jsp"%>
+	<%@ include file="nav.jsp"%>
+	<div id="content">
+		<p>Hello World!</p>
+	</div>
+	<%@ include file="bottom.jsp"%>
 </body>
 </html>
